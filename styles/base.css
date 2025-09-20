@@ -1,0 +1,122 @@
+body {
+  font-family: 'Boogaloo', sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #1ca5ff;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+header img {
+  width: 70px;
+  height: auto;
+  text-align: center;
+  padding: .5rem;
+}
+
+header h1 {
+  margin: 0;
+  padding: 1rem 0;
+  color: black;
+  font-size: 2.5rem;
+}
+
+#menu {
+	font-size: 2.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	right: 1rem;
+  top: .5rem;
+	left: auto;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+nav {
+	grid-column: 1 / 4;
+  text-align: center;
+}
+
+header nav ul {
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.open {
+  display: block;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  list-style: none;
+  border-bottom: 1px solid #000;
+}
+
+nav ul li:first-child {
+  border-top: 1px solid #000;
+}
+
+ul a {
+  display: block;
+  padding: .5rem;
+  color: #000;
+  width: 100%;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+  padding: .5rem;
+}
+
+
+
+
+
+
+
+
+
+footer {
+  margin: 0rem;
+  padding: 1rem;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  text-align: center;
+  background-color: #1ca5ff;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer > :first-child {
+  color: black;
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 1.8rem;
+  text-shadow: .5px 1.5px 1px white;
+}
+
+footer > :nth-child(2){
+  color: #002981;
+  font-size: 1.2rem;
+  font-weight: 200;
+  font-weight: bold;
+  text-shadow: .5px .5px .5px #000;
+}
