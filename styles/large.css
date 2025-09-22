@@ -51,25 +51,38 @@
   border-top: 0;
   }
 
-  main #me {
+  main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: .5rem;
+    grid-template-columns: 2fr 1fr; 
     align-items: stretch;
   }
 
-  #me #aboutme {
+  main h1 {
+    grid-column: 1 / 4;
+  }
+
+  #me1 {
+    margin-bottom: .5rem;
+  }
+
+  #me1 #aboutme {
     grid-column: 1 / 2;
+    height: 100%;
+    margin-bottom: 0;
+    margin-right: .75rem;
   }
 
   #aboutme p {
     font-size: 1.5rem;
   }
 
-  #me #photo {
+  #me2 {
+    margin-bottom: .5rem;
+  }
+
+  #me2 #photo {
     grid-column: 2 / 3;
     flex-direction: column;
-    margin-bottom: 1rem;
   }
 
   #photo img {
@@ -78,6 +91,7 @@
   }
 
   #courses {
+    grid-column: 1 / 4;
     margin-top: 0;
   }
 
