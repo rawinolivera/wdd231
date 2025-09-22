@@ -15,24 +15,25 @@ header {
 header img {
   width: 70px;
   height: auto;
-  text-align: center;
-  padding: .5rem;
+  position: absolute;
+  left: .5rem;
+  padding: .5rem 0;
 }
 
 header h1 {
   margin: 0;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   color: black;
-  font-size: 2.5rem;
+  font-size: 2.15rem;
 }
 
 #menu {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	border: 0;
 	background: none;
 	color: #000;
  	position: absolute;
-	right: 1rem;
+	right: .5rem;
   top: .5rem;
 	left: auto;
 }
@@ -85,38 +86,91 @@ nav a:hover {
   padding: .5rem;
 }
 
+main {
+  padding: .5rem 1rem;
+}
 
+main #aboutme {
+  border: 1px solid #000;
+  padding: 0 .5rem;
+  margin-bottom: 1rem ;
+}
 
+main h2 {
+  margin: .5rem 0;
+}
 
+main #photo {
+  border: 1px solid #000;
+  padding: 0 1.5rem;
+}
 
+#photo img {
+  width: 100%;
+
+}
+
+#b-course {
+  display: flex;
+}
+
+#b-course button {
+  flex: 1;
+  margin: 2px;
+}
+
+#social {
+  display: flex;
+  margin: 0rem 2.5rem;
+}
+
+#social img {
+  flex: 1;
+  max-width: 33.33%;
+}
+
+main #course-list ul {
+  padding: 0;
+  margin: .5rem 0;
+}
+
+main #course-list li {
+  list-style: none;
+  border: solid 1px #000;
+  text-align: center;
+  margin-bottom: 2px;
+}
 
 
 
 
 footer {
   margin: 0rem;
-  padding: 1rem;
+  padding-top: 0;
   grid-column: 1 / 4;
   grid-row: 3 / 4;
   text-align: center;
+}
+
+footer #info {
   background-color: #1ca5ff;
+  padding: 1rem;
 }
 
 footer p {
   margin: 0;
 }
 
-footer > :first-child {
+footer #info > :first-child {
   color: black;
   font-family: 'Boogaloo', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   text-shadow: .5px 1.5px 1px white;
 }
 
-footer > :nth-child(2){
+footer #info > :nth-child(2){
   color: #002981;
   font-size: 1.2rem;
-  font-weight: 200;
-  font-weight: bold;
+  font-weight: 100;
   text-shadow: .5px .5px .5px #000;
 }
