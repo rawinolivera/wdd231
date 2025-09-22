@@ -54,14 +54,36 @@
   main #me {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: .5rem;
+    align-items: stretch;
   }
 
   #me #aboutme {
     grid-column: 1 / 2;
   }
 
+  #aboutme p {
+    font-size: 1.5rem;
+  }
+
   #me #photo {
     grid-column: 2 / 3;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  #photo img {
+    object-fit: cover;
+    height: 400px;
+  }
+
+  #courses {
+    margin-top: 0;
+  }
+
+  #course-list ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
   }
 
 }

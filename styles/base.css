@@ -87,27 +87,51 @@ nav a:hover {
 }
 
 main {
-  padding: .5rem 1rem;
+  padding: 0 1rem .5rem 1rem;
+}
+
+main h1 {
+  margin: .5rem 0;
 }
 
 main #aboutme {
   border: 1px solid #000;
-  padding: 0 .5rem;
   margin-bottom: 1rem ;
 }
 
+#aboutme p {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
 main h2 {
-  margin: .5rem 0;
+  margin: 0;
+  padding: .5rem 0;
+  text-align: center;
+  background-color: #1ca5ff;
 }
 
 main #photo {
   border: 1px solid #000;
-  padding: 0 1.5rem;
+  padding-bottom: .75rem;
+}
+
+#photo div {
+  padding: 0 1rem;
+  
 }
 
 #photo img {
   width: 100%;
+  padding-top: 1rem;
+}
 
+#courses {
+  margin-top: 1rem;
+}
+
+#courses h2 {
+  margin-bottom: .3rem;
 }
 
 #b-course {
@@ -117,19 +141,11 @@ main #photo {
 #b-course button {
   flex: 1;
   margin: 2px;
-}
-
-#social {
-  display: flex;
-  margin: 0rem 2.5rem;
-}
-
-#social img {
-  flex: 1;
-  max-width: 33.33%;
+  padding: .25rem;
 }
 
 main #course-list ul {
+  display: grid;
   padding: 0;
   margin: .5rem 0;
 }
@@ -139,9 +155,8 @@ main #course-list li {
   border: solid 1px #000;
   text-align: center;
   margin-bottom: 2px;
+  padding: .25rem;
 }
-
-
 
 
 footer {
@@ -150,6 +165,16 @@ footer {
   grid-column: 1 / 4;
   grid-row: 3 / 4;
   text-align: center;
+}
+
+#social {
+  display: flex;
+  margin: 0rem 2.5rem;
+  justify-content: center;
+}
+
+#social img {
+  width: 70px ;
 }
 
 footer #info {
