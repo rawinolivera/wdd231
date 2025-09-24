@@ -11,8 +11,49 @@
   <meta property="og:url" content="https://rawinolivera.github.io/wdd231/chamber">
   <link rel="stylesheet" href="/style/normalize.css">
   <title>Directory Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Edu+QLD+Beginner:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/base.css">
+  <script src="./scripts/base.js" defer></script>
 </head>
 <body>
-  
+  <header>
+    <a href="index.html">
+      <img src="./images/city-logo.svg" alt="Chamber Logo">
+    </a>
+    <span>São Paulo Chamber of Commerce</span>
+    <button id="menu"></button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://rawinolivera.github.io/wdd231/chamber">Chamber Project</a></li>
+        <li><a href="">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Home</h1>
+  </main>
+  <footer>
+    <div id="chamber-info">
+      <p>São Paulo Chamber of Commerce</p>
+      <p>Av. Dr. Arnaldo, 251 - Cerqueira César</p>
+      <p>São Paulo - SP, 01246-000</p>
+      <p>info@spchamber.com.br</p>
+      <p>(11)99901-2010</p>
+    </div>
+    <div id="social">
+      <img src="./images/linkedin-logo.svg" alt="LinkedIn-icon">
+      <img src="./images/github-logo.svg" alt="GitHub-icom">
+      <img src="./images/whatsapp-logo.svg" alt="Whatsapp-icon">
+    </div>
+    <div id="info">
+      <p>WDD231 Class Project</p>
+      <p>Rawin Olivera</p>
+      <p>&#169;<span id="current-year"></span> São Paulo Chamber of Commerce</p>
+      <p>Last Modified: <span id="last-mod"></span></p>
+    </div>
+  </footer>
 </body> 
 </html>

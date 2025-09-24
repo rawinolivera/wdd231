@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Itaú Unibanco",
+    "address": "Praça Alfredo Egydio de Souza Aranha, 100 — Torre Olavo Setúbal, Parque Jabaquara, São Paulo, SP, 04344-902",
+    "phone_number": ["+55 11 2794-3547", "+55 11 5019-1122"],
+    "website_url": "https://www.itau.com.br/",
+    "icon_url": "./images/itau.jpg",
+    "membership_level": 3,
+    "other_info": "Largest private bank in Brazil; headquarters located in São Paulo."
+  },
+  {
+    "name": "Santander Brasil",
+    "address": "Av. Paulista, 1374 — Bela Vista, São Paulo, SP, 01310-916",
+    "phone_number": ["+55 11 3285-4344", "+55 11 50574-7655"],
+    "website_url": "https://www.santander.com.br/",
+    "icon_url": "./images/santander.png",
+    "membership_level": 3,
+    "other_info": "Brazilian branch of the global Santander Group; main office on Avenida Paulista."
+  },
+  {
+    "name": "Bradesco",
+    "address": "Cidade de Deus, s/nº — Vila Yara, Osasco, SP",
+    "phone_number": ["0800 704 8383"],
+    "website_url": "https://www.bradesco.com.br/",
+    "icon_url": "./images/bradesco.jpg",
+    "membership_level": 3,
+    "other_info": "One of the largest private banks in Brazil; headquarters in Osasco (São Paulo metro area)."
+  },
+  {
+    "name": "Accenture Brasil",
+    "address": "Av. das Nações Unidas, 14401 — Vila Gertrudes, São Paulo, SP, 04794-000",
+    "phone_number": ["+55 11 5188-3000"],
+    "website_url": "https://www.accenture.com/br-pt",
+    "icon_url": "./images/accenture.png",
+    "membership_level": 3,
+    "other_info": "Global consulting and technology services company; Brazilian headquarters in São Paulo."
+  },
+  {
+    "name": "iFood",
+    "address": "Avenida dos Autonomistas, 1496 — Vila Yara, Osasco, SP, 06020-902",
+    "phone_number": ["Support numbers vary by region"],
+    "website_url": "https://www.ifood.com.br/",
+    "icon_url": "./images/ifood.jpg",
+    "membership_level": 2,
+    "other_info": "Leading food delivery platform in Brazil; headquarters in Osasco (São Paulo metro area)."
+  },
+  {
+    "name": "Nubank",
+    "address": "Rua Capote Valente, 39 — Pinheiros, São Paulo, SP, 05409-000",
+    "phone_number": ["Available via website customer service"],
+    "website_url": "https://www.nubank.com.br/",
+    "icon_url": "./images/nubank.png",
+    "membership_level": 3,
+    "other_info": "Brazil’s largest fintech bank; offices located in Pinheiros, São Paulo."
+  },
+  {
+    "name": "TOTVS",
+    "address": "Avenida Ibirapuera, 2315, 7th floor — São Paulo, SP, 04029-100",
+    "phone_number": ["+55 11 5051-7040"],
+    "website_url": "https://www.totvs.com/",
+    "icon_url": "./images/totvs.jpg",
+    "membership_level": 2,
+    "other_info": "Brazilian software company specialized in ERP and enterprise solutions."
+  },
+  {
+    "name": "99 (App)",
+    "address": "São Paulo city (corporate office address not publicly disclosed)",
+    "phone_number": ["3004-8199 (São Paulo only)"],
+    "website_url": "https://99app.com/",
+    "icon_url": "./images/99.jpg",
+    "membership_level": 1,
+    "other_info": "Mobility and food delivery app, part of DiDi Chuxing."
+  },
+  {
+    "name": "Mercado Livre Brasil",
+    "address": "Av. das Nações Unidas, 3003 — Osasco, SP, 06233-903",
+    "phone_number": ["Customer support handled online"],
+    "website_url": "https://www.mercadolivre.com.br/",
+    "icon_url": "./images/mercado livre.jpg",
+    "membership_level": 3,
+    "other_info": "Latin America’s largest e-commerce platform; major operations in São Paulo metro area."
+  },
+  {
+    "name": "Magazine Luiza (Magalu)",
+    "address": "Rua Maria Prestes Maia, 300 — Vila Guilherme, São Paulo, SP",
+    "phone_number": ["+55 11 3504-2727", "+55 11 3504-2000"],
+    "website_url": "https://www.magazineluiza.com.br/",
+    "icon_url": "./images/magalu.png",
+    "membership_level": 2,
+    "other_info": "Major Brazilian retailer with offices and stores in São Paulo."
+  },
+  {
+    "name": "Carrefour Brasil",
+    "address": "Av. das Nações Unidas, 11.541 — Vila Almeida, São Paulo, SP, 04795-100",
+    "phone_number": ["0800 724 2822"],
+    "website_url": "https://www.carrefour.com.br/",
+    "icon_url": "./images/carrefour.jpg",
+    "membership_level": 2,
+    "other_info": "Brazilian subsidiary of the French retail giant Carrefour; headquarters in São Paulo."
+  },
+  {
+    "name": "Viação Cometa",
+    "address": "Rua dos Três Irmãos, 100 — Jabaquara, São Paulo, SP",
+    "phone_number": ["+55 11 5067-1000"],
+    "website_url": "https://www.viacaocometa.com.br/",
+    "icon_url": "./images/cometa.png",
+    "membership_level": 2,
+    "other_info": "Viação Cometa is a Brazilian intercity bus company founded in 1937. It operates routes connecting São Paulo to various cities in the state and neighboring regions."
+  }
+]
