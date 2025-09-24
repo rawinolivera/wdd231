@@ -1,1 +1,1 @@
-const requestURL = chamber/scripts/members.json
+const requestURL = "https://rawinolivera.github.io/wdd231/chamber/scripts/members.json";
