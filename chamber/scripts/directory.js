@@ -23,7 +23,8 @@ fetch(requestURL)
     name.textContent = `${member.name}`;
     address.textContent = `${member.address}`;
     phoneNumber.textContent = `${member.phone_number}`;
-    url.textContent = `${member.website_url}`;
+    url.href = `${member.website_url}`;
+    url.target = "_blank";
     image.src = `${member.icon_url}`;
     image.alt = `Company Offial Logo`;
     membership.textContent = `${member.membership_level}`;
