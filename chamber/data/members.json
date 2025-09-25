@@ -1,4 +1,5 @@
-[
+{
+  "members": [
       {
         "name": "Itaú Unibanco",
         "address": "Praça Alfredo Egydio de Souza Aranha, 100 — Torre Olavo Setúbal, Parque Jabaquara, São Paulo, SP, 04344-902",
@@ -107,4 +108,5 @@
         "membership_level": 2,
         "other_info": "Viação Cometa is a Brazilian intercity bus company founded in 1937. It operates routes connecting São Paulo to various cities in the state and neighboring regions."
       }
-]
+  ]
+}
