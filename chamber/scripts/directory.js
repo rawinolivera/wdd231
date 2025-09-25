@@ -24,18 +24,20 @@ fetch(requestURL)
     address.textContent = `${member.address}`;
     phoneNumber.textContent = `${member.phone_number}`;
     url.href = `${member.website_url}`;
+    url.textContent = `${member.website_url}`;
     url.target = "_blank";
     image.src = `${member.icon_url}`;
     image.alt = `Company Offial Logo`;
     membership.textContent = `${member.membership_level}`;
     otherInfo.textContent = `${member.other_info}`;
 
-    card.appendChild(name); 
-    card.appendChild(address); 
-    card.appendChild(phoneNumber); 
-    card.appendChild(url); 
-    card.appendChild(image); 
-    card.appendChild(membership); 
-    card.appendChild(otherInfo); 
-    dir.appendChild(card); 
+    
+    card.appendChild(image);
+    card.appendChild(address);
+    card.appendChild(phoneNumber);
+    card.appendChild(url);
+    //card.appendChild(name);
+    //card.appendChild(membership);
+    //card.appendChild(otherInfo);
+    dir.appendChild(card);
   }

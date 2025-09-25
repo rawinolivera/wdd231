@@ -2,7 +2,7 @@
   "members": [
       {
         "name": "Itaú Unibanco",
-        "address": "Praça Alfredo Egydio de Souza Aranha, 100 — Torre Olavo Setúbal, Parque Jabaquara, São Paulo, SP, 04344-902",
+        "address": "Parque Jabaquara, São Paulo, SP, 04344-902",
         "phone_number": "+55 11 5019-1122",
         "website_url": "https://www.itau.com.br/",
         "icon_url": "./images/itau.jpg",
@@ -11,7 +11,7 @@
       },
       {
         "name": "Santander Brasil",
-        "address": "Av. Paulista, 1374 — Bela Vista, São Paulo, SP, 01310-916",
+        "address": "Av. Paulista — Bela Vista, São Paulo, SP, 01310-916",
         "phone_number": "+55 11 3285-4344",
         "website_url": "https://www.santander.com.br/",
         "icon_url": "./images/santander.png",
@@ -20,7 +20,7 @@
       },
       {
         "name": "Bradesco",
-        "address": "Cidade de Deus, s/nº — Vila Yara, Osasco, SP",
+        "address": "Taboão da Serra - SP, 06754-190",
         "phone_number": "0800 704 8383",
         "website_url": "https://www.bradesco.com.br/",
         "icon_url": "./images/bradesco.jpg",
@@ -29,7 +29,7 @@
       },
       {
         "name": "Accenture Brasil",
-        "address": "Av. das Nações Unidas, 14401 — Vila Gertrudes, São Paulo, SP, 04794-000",
+        "address": "Vila Gertrudes, São Paulo, SP, 04794-000",
         "phone_number": "+55 11 5188-3000",
         "website_url": "https://www.accenture.com/br-pt",
         "icon_url": "./images/accenture.png",
@@ -38,7 +38,7 @@
       },
       {
         "name": "iFood",
-        "address": "Avenida dos Autonomistas, 1496 — Vila Yara, Osasco, SP, 06020-902",
+        "address": "Vila Yara, Osasco, SP, 06020-902",
         "phone_number": "5236-1010",
         "website_url": "https://www.ifood.com.br/",
         "icon_url": "./images/ifood.jpg",
@@ -47,7 +47,7 @@
       },
       {
         "name": "Nubank",
-        "address": "Rua Capote Valente, 39 — Pinheiros, São Paulo, SP, 05409-000",
+        "address": "Pinheiros, São Paulo, SP, 05409-000",
         "phone_number": "3893-9512",
         "website_url": "https://www.nubank.com.br/",
         "icon_url": "./images/nubank.png",
@@ -56,7 +56,7 @@
       },
       {
         "name": "TOTVS",
-        "address": "Avenida Ibirapuera, 2315, 7th floor — São Paulo, SP, 04029-100",
+        "address": "7th floor — São Paulo, SP, 04029-100",
         "phone_number": "+55 11 5051-7040",
         "website_url": "https://www.totvs.com/",
         "icon_url": "./images/totvs.jpg",
@@ -65,7 +65,7 @@
       },
       {
         "name": "99 (App)",
-        "address": "São Paulo city (corporate office address not publicly disclosed)",
+        "address": "Santo Amaro, São Paulo - SP, 04708-000",
         "phone_number": "3004-8199",
         "website_url": "https://99app.com/",
         "icon_url": "./images/99.jpg",
@@ -74,7 +74,7 @@
       },
       {
         "name": "Mercado Livre Brasil",
-        "address": "Av. das Nações Unidas, 3003 — Osasco, SP, 06233-903",
+        "address": "Osasco, SP, 06233-903",
         "phone_number": "+55 11 3504-2727",
         "website_url": "https://www.mercadolivre.com.br/",
         "icon_url": "./images/mercado livre.jpg",
@@ -83,7 +83,7 @@
       },
       {
         "name": "Magazine Luiza (Magalu)",
-        "address": "Rua Maria Prestes Maia, 300 — Vila Guilherme, São Paulo, SP",
+        "address": "Vila Guilherme, São Paulo, SP",
         "phone_number": "+55 11 3504-2000",
         "website_url": "https://www.magazineluiza.com.br/",
         "icon_url": "./images/magalu.png",
@@ -92,7 +92,7 @@
       },
       {
         "name": "Carrefour Brasil",
-        "address": "Av. das Nações Unidas, 11.541 — Vila Almeida, São Paulo, SP, 04795-100",
+        "address": "Vila Almeida, São Paulo, SP, 04795-100",
         "phone_number": "0800 724 2822",
         "website_url": "https://www.carrefour.com.br/",
         "icon_url": "./images/carrefour.jpg",
@@ -101,7 +101,7 @@
       },
       {
         "name": "Viação Cometa",
-        "address": "Rua dos Três Irmãos, 100 — Jabaquara, São Paulo, SP",
+        "address": "Jabaquara, São Paulo, SP",
         "phone_number": "+55 11 5067-1000",
         "website_url": "https://www.viacaocometa.com.br/",
         "icon_url": "./images/cometa.png",

@@ -91,6 +91,26 @@ nav a:hover {
 }
 
 
+main #directory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#directory section {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+#directory img {
+  width: 70%
+}
+
+#directory 
+
 
 
 footer {
