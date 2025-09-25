@@ -50,7 +50,7 @@
         "address": "Pinheiros, São Paulo, SP, 05409-000",
         "phone_number": "3893-9512",
         "website_url": "https://www.nubank.com.br/",
-        "icon_url": "./images/nubank.jpg",
+        "icon_url": "./images/nubank.png",
         "membership_level": 3,
         "other_info": "Brazil’s largest fintech bank; offices located in Pinheiros, São Paulo."
       },
@@ -104,7 +104,7 @@
         "address": "Jabaquara, São Paulo, SP",
         "phone_number": "+55 11 5067-1000",
         "website_url": "https://www.viacaocometa.com.br/",
-        "icon_url": "./images/cometa.png",
+        "icon_url": "./images/cometa.jpg",
         "membership_level": 2,
         "other_info": "Viação Cometa is a Brazilian intercity bus company founded in 1937. It operates routes connecting São Paulo to various cities in the state and neighboring regions."
       }
