@@ -2,7 +2,7 @@
   "members": [
       {
         "name": "Itaú Unibanco",
-        "address": "Parque Jabaquara, São Paulo, 04344-902",
+        "address": "Pq Jabaquara, São Paulo, 04344-902",
         "phone_number": "+55 11 5019-1122",
         "website_url": "https://www.itau.com.br/",
         "icon_url": "./images/itau.jpg",
@@ -11,7 +11,7 @@
       },
       {
         "name": "Santander Brasil",
-        "address": "Av. Paulista — Bela Vista, São Paulo, 01310-916",
+        "address": "Bela Vista, São Paulo, 01310-916",
         "phone_number": "+55 11 3285-4344",
         "website_url": "https://www.santander.com.br/",
         "icon_url": "./images/santander.png",
