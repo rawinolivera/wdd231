@@ -105,6 +105,10 @@ main #directory {
   border-radius: .5rem;
 }
 
+#directory  p {
+  margin: 0;
+}
+
 #directory img {
   width: 70%
 }
