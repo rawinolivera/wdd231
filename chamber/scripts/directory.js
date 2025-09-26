@@ -20,24 +20,59 @@ fetch(requestURL)
     let membership = document.createElement("p");
     let otherInfo = document.createElement("p");
 
+    
     name.textContent = `${member.name}`;
+    name.className = "m-name";
     address.textContent = `${member.address}`;
     phoneNumber.textContent = `${member.phone_number}`;
     url.href = `${member.website_url}`;
     url.textContent = `${member.website_url}`;
     url.target = "_blank";
+    image.className = "img";
     image.src = `${member.icon_url}`;
     image.alt = `Company Offial Logo`;
     membership.textContent = `${member.membership_level}`;
     otherInfo.textContent = `${member.other_info}`;
 
     
+    card.appendChild(name);
     card.appendChild(image);
     card.appendChild(address);
     card.appendChild(phoneNumber);
     card.appendChild(url);
-    //card.appendChild(name);
     //card.appendChild(membership);
     //card.appendChild(otherInfo);
     dir.appendChild(card);
+    dir.className = "grid";
+
+    name.style.display = "none";
   }
+
+  const grid = document.querySelector("#grid");
+  const list = document.querySelector("#list");
+
+  grid.addEventListener("click", function() {
+    const names = document.querySelectorAll(".m-name");
+    const imgs = document.querySelectorAll(".img");
+    imgs.forEach(imagen => {
+      imagen.style.display = "inline-block";
+    }); 
+    names.forEach(na => {
+      na.style.display = "none";
+    })
+    dir.classList.remove("list")
+    dir.classList.add("grid");
+  })
+
+  list.addEventListener("click", function() {
+    const names = document.querySelectorAll(".m-name");
+    const imgs = document.querySelectorAll(".img");
+    imgs.forEach(imagen => {
+      imagen.style.display = "none";
+    }); 
+    names.forEach(na => {
+      na.style.display = "block";
+    })
+    dir.classList.remove("grid")
+    dir.classList.add("list");
+  })

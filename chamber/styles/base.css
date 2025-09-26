@@ -90,19 +90,42 @@ nav a:hover {
   padding: .5rem;
 }
 
-
-main #directory {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
-  padding: 1rem;
+  max-width: calc(300px * 4 + 3rem);
+  margin: 0 auto;
+  section {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: .5rem;
+    border-bottom: solid 1.5px;
+  }
+}
+
+
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: .5rem;
+    margin-bottom: .5rem;
+  }
 }
 
 #directory section {
+  gap: 1rem;
   text-align: center;
   background-color: lightgrey;
   padding: 1rem;
   border-radius: .5rem;
+  border-bottom: solid 1.5px;
 }
 
 #directory  p {
@@ -110,12 +133,31 @@ main #directory {
 }
 
 #directory img {
-  width: 70%
+  width: 80%;
+  padding-bottom: .5rem;
+  object-fit:contain;
+  max-height: 150px;
+    
 }
 
-#directory 
+.buttons {
+  text-align: center;
+}
 
+.buttons #grid {
+  display: inline-block;
+  width: 3rem;
+  border: solid 2.5px;
+  padding: .3rem .5rem;
+  margin-right: .25rem;
+}
 
+.buttons #list {
+  display: inline-block;
+  width: 3rem;
+  border: solid 2.5px;
+  padding: .3rem .5rem;
+}
 
 footer {
   margin: 0rem;
