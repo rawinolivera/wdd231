@@ -76,6 +76,24 @@
     justify-content: center;
   }
 
+  header nav a {
+    padding-right: 0;
+  }
+
+  header nav a {
+    padding-right: 0;
+  }
+
+}
+
+@media screen and (min-width: 675px) {
+  header span {
+    font-size: 2rem;
+  }
+
+  header nav a {
+    padding-right: .5rem;
+  }
 }
 
 @media screen and (min-width: 720px) {
