@@ -1,14 +1,18 @@
 const requestURL = "https://rawinolivera.github.io/wdd231/chamber/data/members.json";
 const dir = document.querySelector("#directory");
 
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
+const asyncFunction = async () => {
+  try {
+    const response = await fetch(requestURL);
+    const jsonObject = await response.json();
     const members = jsonObject['members'];
     members.forEach(displayMembers);
-  });
+  } catch (error) {
+    console.error("Members not found:", error);
+  }
+};
+
+asyncFunction();
 
   function displayMembers(member) {
     let card = document.createElement("section");
@@ -20,7 +24,7 @@ fetch(requestURL)
     let membership = document.createElement("p");
     let otherInfo = document.createElement("p");
 
-    
+
     name.textContent = `${member.name}`;
     name.className = "m-name";
     address.textContent = `${member.address}`;
