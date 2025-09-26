@@ -17,19 +17,24 @@
 
   header img {
     position: relative;
+    width: 85px;
   }
 
   header span {
     font-size: 2rem;
   }
 
-  header h1 {
-    font-size: 3rem;
+  header span {
+    font-size: 2.5rem;
     margin: 0;
   }
 
   nav ul {
     display: flex;
+  }
+
+  header nav a {
+    font-size: 1.7rem;
   }
 
   header nav {
@@ -52,6 +57,10 @@
 
   main h1 {
     margin-left: 1rem;
+  }
+
+  #directory p, a {
+    font-size: 1.2rem;
   }
 
   .list {
