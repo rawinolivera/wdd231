@@ -15,9 +15,12 @@
   text-align: center;
   }
 
+  header img {
+    position: relative;
+  }
+
   header span {
     font-size: 2rem;
-    left: 2rem;
   }
 
   header h1 {
@@ -26,10 +29,8 @@
   }
 
   nav ul {
-  display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
+    display: flex;
+  }
 
   header nav {
     margin-right: 1rem;
@@ -47,6 +48,10 @@
 
   nav ul li:first-child {
   border-top: 0;
+  }
+
+  main h1 {
+    margin-left: 1rem;
   }
 
   .list {

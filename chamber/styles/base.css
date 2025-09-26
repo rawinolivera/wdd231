@@ -98,13 +98,15 @@ nav a:hover {
 #directory section {
   gap: 1rem;
   text-align: center;
-  background-color: lightgrey;
   padding: 1rem;
-  border-radius: .5rem;
   border-bottom: solid 1.5px;
 }
 
-#directory  p {
+#directory a:link, a:visited, a:active {
+  color: #000850;
+}
+
+#directory p {
   margin: 0;
 }
 
@@ -113,7 +115,6 @@ nav a:hover {
   padding-bottom: .5rem;
   object-fit:contain;
   max-height: 150px;
-    
 }
 
 .grid {
@@ -126,9 +127,10 @@ nav a:hover {
 
 .grid section {
   text-align: center;
-  background-color: lightgrey;
   padding: 1rem;
   border-bottom: solid 1.5px;
+  border-radius: .5rem;
+  background-color: lightgray;
 }
 
 .list {
@@ -141,8 +143,15 @@ nav a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   padding: .5rem;
-  margin-bottom: .5rem;
   border-radius: 0;
+}
+
+.list section:nth-child(even) {
+  background-color: lightgray;
+}
+
+.list section:nth-child(odd) {
+  background-color: rgb(173, 255, 173);
 }
 
 .buttons {
@@ -204,8 +213,7 @@ footer #info > :first-child {
 }
 
 footer #info > :nth-child(2){
-  color: #002981;
   font-size: 1.2rem;
   font-weight: 100;
-  text-shadow: .5px .5px .5px #000;
+  text-shadow: .5px .5px .5px white;
 }
