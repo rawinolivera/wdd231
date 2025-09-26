@@ -21,11 +21,11 @@
   }
 
   header span {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   header span {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
   }
 
@@ -76,5 +76,11 @@
     justify-content: center;
   }
 
+}
+
+@media screen and (min-width: 720px) {
+  header span {
+    font-size: 2.5rem;
+  }
 }
 
