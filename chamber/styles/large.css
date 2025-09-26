@@ -12,6 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+  }
+
+  header span {
+    font-size: 2rem;
+    left: 2rem;
   }
 
   header h1 {
@@ -44,7 +50,17 @@
   }
 
   .list {
-    margin: 1rem;
+    padding: 1rem;
   }
+
+  .grid {
+    padding: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 

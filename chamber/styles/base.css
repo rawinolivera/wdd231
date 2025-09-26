@@ -13,6 +13,10 @@ header {
   min-height: 90px;
 }
 
+header h1 {
+  padding-left: 1rem;
+}
+
 header img {
   width: 70px;
   height: auto;
@@ -90,35 +94,6 @@ nav a:hover {
   padding: .5rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  max-width: calc(300px * 4 + 3rem);
-  margin: 0 auto;
-}
-
-.grid section {
-  text-align: center;
-  background-color: lightgrey;
-  padding: 1rem;
-  border-radius: .5rem;
-  border-bottom: solid 1.5px;
-}
-
-
-.list {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.list section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
-  padding: .5rem;
-  margin-bottom: .5rem;
-}
 
 #directory section {
   gap: 1rem;
@@ -139,6 +114,35 @@ nav a:hover {
   object-fit:contain;
   max-height: 150px;
     
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  max-width: calc(300px * 4 + 3rem);
+  margin: 0 auto;
+}
+
+.grid section {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 1rem;
+  border-bottom: solid 1.5px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.list section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  border-radius: 0;
 }
 
 .buttons {
