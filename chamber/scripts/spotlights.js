@@ -62,6 +62,7 @@ function displayEvents(event) {
   date.textContent = `${event.date}`;
   time.textContent = `${event.time}`;
   entry.textContent = `${event.entry}`;
+  entry.className = "aqui";
 
   card.appendChild(name);
   card.appendChild(location);
