@@ -44,18 +44,54 @@ fetch(apiURL)
   icon.appendChild(img);
   document.querySelector('#condit').textContent = desc;
 
-  let windchill = "";
-
-  if (te < 10 && sp >= 4.8){
-      windchill = windChill(te, sp);
-      windchill = `${windchill} °C`;
-  } else {
-      windchill = "N/A";
-  } 
-  //output
-  document.querySelector("#w-chill").innerHTML = windchill;
-
-  function windChill(te,sp) {
-    return Math.round((13.12 + 0.6215 * te - 11.37 * Math.pow(sp, 0.16) + 0.3965 * te * Math.pow(sp, 0.16)) * 100) / 100;
-  }
 }); 
+
+//Forecast
+async function forecast() {
+  const requestURL =  "https://api.openweathermap.org/data/2.5/forecast?id=3448439&units=metric&appid=0c8a48091627e17ece4ad85f202a2799";
+
+  const res = await fetch(requestURL);
+  const data = await res.json();
+
+  const tempsByDate = {};
+
+  // Agrupar entradas por fecha
+  data.list.forEach(item => {
+    const date = item.dt_txt.split(" ")[0]; // "2025-10-04"
+    if (!tempsByDate[date]) tempsByDate[date] = [];
+    tempsByDate[date].push(item.main.temp);
+  });
+
+  const dates = Object.keys(tempsByDate).slice(0, 3); // Hoy, mañana, pasado mañana
+
+  const forecast = dates.map(date => {
+    const temps = tempsByDate[date];
+    return {
+      date,
+      tempMin: Math.min(...temps),
+      tempMax: Math.max(...temps),
+      tempAvg: (temps.reduce((a, b) => a + b, 0) / temps.length).toFixed(1)
+    };
+  });
+
+  //Days of the week
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const today = new Date();
+const tomorrow = new Date();
+tomorrow.setDate(today.getDate() + 1);
+
+const afterTomP = new Date();
+afterTomP.setDate(today.getDate() + 2);
+
+  let todayP = document.querySelector("#today");
+  let tomorrowP = document.querySelector("#tomorrow");
+  let afterTom = document.querySelector("#afterTom");
+
+  todayP.textContent =  `Today: ${forecast[0].tempAvg} °`;
+  tomorrowP.textContent = `${days[tomorrow.getDay()]}: ${forecast[1].tempAvg} °`;
+  afterTom.textContent = `${days[afterTomP.getDay()]}: ${forecast[2].tempAvg} °`;
+
+}
+
+forecast();

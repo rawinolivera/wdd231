@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./styles/base.css">
   <link rel="stylesheet" href="./styles/large.css">
   <script src="./scripts/base.js" defer></script>
-  <script src="./scripts/spotlights.js" defer></script>
+  <script type="module" src="./scripts/spotlights.js" defer></script>
   <script src="./scripts/weather.js" defer></script>
 </head>
 <body>
@@ -44,9 +44,11 @@
       <a id="c-link" href="./index.html"><p>Join the chamber</p></a>
     </section>
     <section id="events">
-      
+      <h2>Events</h2>
     </section>
     <section id="weather">
+      <h2>Current Weather</h2>
+      <div class="icon"></div>
       <p><span id="temp"></span></p>
       <p><span id="condit"></span></p>
       <p>High: <span id="h-temp"></span></p>
@@ -56,10 +58,13 @@
       <p>Sun Set: <span id="sun-set"></span></p>
     </section>
     <section id="forecast">
-
+      <h2>Weather Forecast</h2>
+      <p><span id="today"></span></p>
+      <p><span id="tomorrow"></span></p>
+      <p><span id="afterTom"></span></p>
     </section>
-    <section id="spotlights">
-
+    <section id="spotlights" class="grid">
+      
     </section>
   </main> 
   <footer>

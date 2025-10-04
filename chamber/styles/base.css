@@ -100,24 +100,23 @@ main h1 {
 
 /* --- DIRECTORY PAGE ---- */
 
-#directory section {
+#spotlights section, #directory section {
   gap: 1rem;
   text-align: center;
   padding: 1rem;
   border-bottom: solid 1.5px;
 }
 
-#directory a:link, a:visited, a:active {
+#spotlights a:link, a:visited, a:active, #directory a:link, a:visited, a:active {
   color: #000850;
   text-decoration: underline;
 }
 
-#directory p {
+#spotlights p, #directory p {
   margin: 0;
-
 }
 
-#directory img {
+#spotlights img, #directory img {
   width: 80%;
   padding-bottom: .5rem;
   object-fit:contain;
