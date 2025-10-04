@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chamber Directory Page">
+  <meta name="description" content="Chamber Home Page">
   <meta name="author" content="Rawin Olivera">
-  <meta property="og:title" content="Homepage - São Paulo Capital Chamber of Commerce">
-  <meta property="og:description" content="Find information from bussiness, events and more related to associated to the Chamber of Commerce in São Paulo Capital">
-  <meta property="og:image" content="https://rawinolivera.github.io/wdd231/chamber/images">
-  <meta property="og:url" content="https://rawinolivera.github.io/wdd231/chamber">
+  <meta property="og:title" content="Homepage - São Paulo Chamber of Commerce">
+  <meta property="og:description" content="Find business information, events, and more related to members of the São Paulo Chamber of Commerce.">
+  <meta property="og:image" content="https://rawinolivera.github.io/wdd231/chamber/images/sao-paulo.webp">
+  <meta property="og:url" content="https://rawinolivera.github.io/wdd231/chamber/index.html">
   <link rel="stylesheet" href="./styles/normalize.css">
-  <title>Directory Page</title>
+  <title>Chamber of Commerce Home Page</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Edu+QLD+Beginner:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/large.css">
   <script src="./scripts/base.js" defer></script>
-  <script src="./scripts/directory.js" defer></script>
+  <script src="./scripts/spotlights.js" defer></script>
+  <script src="./scripts/weather.js" defer></script>
 </head>
 <body>
   <header>
@@ -34,10 +37,31 @@
       </ul>
     </nav>
   </header>
+  <main id="home">
+    <h1>Home</h1>
+    <section id="hero">
+      <img src="./images/hero1.webp" alt="Hero image">
+      <a id="c-link" href="./index.html"><p>Join the chamber</p></a>
+    </section>
+    <section id="events">
+      
+    </section>
+    <section id="weather">
+      <p><span id="temp"></span></p>
+      <p><span id="condit"></span></p>
+      <p>High: <span id="h-temp"></span></p>
+      <p>Low: <span id="l-temp"></span></p>
+      <p>Humidity: <span id="humidity"></span></p>
+      <p>Sun Rise: <span id="sun-rise"></span></p>
+      <p>Sun Set: <span id="sun-set"></span></p>
+    </section>
+    <section id="forecast">
 
+    </section>
+    <section id="spotlights">
 
-
-
+    </section>
+  </main> 
   <footer>
     <div id="chamber-info">
       <p>São Paulo Chamber of Commerce</p>
@@ -48,7 +72,7 @@
     </div>
     <div id="social">
       <img src="./images/linkedin-logo.svg" alt="LinkedIn-icon">
-      <img src="./images/github-logo.svg" alt="GitHub-icom">
+      <img src="./images/facebook-logo.svg" alt="GitHub-icom">
       <img src="./images/whatsapp-logo.svg" alt="Whatsapp-icon">
     </div>
     <div id="info">

@@ -1,0 +1,18 @@
+{
+  "events": [
+    {
+      "name": "Special Screening + Free Concert — Sala São Paulo",
+      "location": "Sala São Paulo",
+      "date": "October 5, 2025",
+      "time": "7:00 PM",
+      "entry": "Free"
+    },
+    {
+      "name": "Brincaderia & Cia — Family Event",
+      "location": "SESI-SP units (multiple locations across São Paulo)",
+      "date": "October 11, 2025",
+      "time": "9:00 AM - 5:00 PM",
+      "entry": "Free"
+    }
+  ]
+}
