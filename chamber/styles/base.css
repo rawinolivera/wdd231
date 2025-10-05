@@ -258,6 +258,10 @@ main h1 {
   padding: .5rem;
 }
 
+#forecast p {
+  font-size: 1.5rem;
+}
+
 footer {
   margin: 1rem 0 0 0;
   padding-top: 0;

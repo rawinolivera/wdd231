@@ -121,6 +121,11 @@
     grid-column: 3 / 4;
   }
 
+  #weather :nth-child(4) {
+    font-size: 1.5rem;
+    color: rgb(33, 0, 218);
+  }
+
   #forecast {
     grid-column: 4 / 5;
   }
