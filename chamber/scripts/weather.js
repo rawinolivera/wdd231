@@ -22,8 +22,8 @@ fetch(apiURL)
 
   const options = { hour: "numeric", minute: "numeric", hour12: true };
 
-  let sr = (sunriseDate.toLocaleTimeString("en-US", options)).replace("AM", "am").replace("PM", "pm");
-  let ss = (sunsetDate.toLocaleTimeString("en-US", options)).replace("AM", "am").replace("PM", "pm");
+  let sr = (sunriseDate.toLocaleTimeString("en-US", options)).replace("AM", "am").replace("PM", "pm").replace(/\s+am/, "am").replace(/\s+pm/, "pm");
+  let ss = (sunsetDate.toLocaleTimeString("en-US", options)).replace("AM", "am").replace("PM", "pm").replace(/\s+am/, "am").replace(/\s+pm/, "pm");
 
   document.querySelector('#temp').textContent = `${te} °C`;  //t
   document.querySelector("#h-temp").textContent = `${tmin} °C`;

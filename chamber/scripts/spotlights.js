@@ -18,9 +18,10 @@ async function loadDirectory() {
     const jsonObject = await response.json();
     const members = jsonObject['members'];
     const filtered = members.filter(member => [1,2].includes(member.membership_level));
-    const twoRandom = getRandomItems(filtered, 2);
+    let numberOfMembers = window.innerWidth >= 1024 ? 3 : 2; 
+    const randomMembers = getRandomItems(filtered, numberOfMembers);
 
-    twoRandom.forEach(m => displayMembers(m, dir));
+    randomMembers.forEach(m => displayMembers(m, dir));
   } catch (error) {
     console.error("Members not found:", error);
   }
