@@ -45,7 +45,7 @@
   header nav ul {
     display: flex;
 		flex-direction: row;
-   }
+  }
 
   nav ul li {
     border: 0;
@@ -53,6 +53,10 @@
 
   nav ul li:first-child {
   border-top: 0;
+  }
+
+  nav a.active {
+    text-decoration: underline;
   }
 
   main h1 {
