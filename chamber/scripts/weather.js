@@ -88,10 +88,9 @@ afterTomP.setDate(today.getDate() + 2);
   let tomorrowP = document.querySelector("#tomorrow");
   let afterTom = document.querySelector("#afterTom");
 
-  todayP.textContent =  `Today: ${forecast[0].tempAvg} °`;
-  tomorrowP.textContent = `${days[tomorrow.getDay()]}: ${forecast[1].tempAvg} °`;
-  afterTom.textContent = `${days[afterTomP.getDay()]}: ${forecast[2].tempAvg} °`;
-
+  todayP.textContent =  `Today: ${forecast[0].tempAvg} °C`;
+  tomorrowP.textContent = `${days[tomorrow.getDay()]}: ${forecast[1].tempAvg} °C`;
+  afterTom.textContent = `${days[afterTomP.getDay()]}: ${forecast[2].tempAvg} °C`;
 }
 
 forecast();
