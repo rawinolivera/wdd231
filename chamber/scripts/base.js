@@ -18,12 +18,14 @@ window.addEventListener("resize", () => {
   }
 });
 
+/*   Menu location   */
 const links = document.querySelectorAll("nav a");
 const currentPage = window.location.pathname.split("/").pop();
 
 links.forEach(link => {
   const linkPage = link.getAttribute("href");
-  if (linkPage === currentPage) {
+  const isDisabled = link.dataset.disabled === "true";
+  if (!isDisabled && linkPage === currentPage) {
     link.classList.add("active");
   }
 });
