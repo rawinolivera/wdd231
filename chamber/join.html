@@ -41,48 +41,46 @@
     <section id="m-form">
       <h2>Membership Application Form</h2>
       <form action="thankyou.html" method="get">
-      <label for="firstName">First Name
+      <label>First Name
         <input type="text" id="firstName" name="firstName" title="Your first name" autocomplete="on" required>
       </label>
-      <label for="lastName">Last Name
+      <label>Last Name
         <input type="text" id="lastName" name="lastName" title="Your last name" autocomplete="on" required>
       </label>
-      <label for="orgTitle">Organizational Title
+      <label>Organizational Title
         <input type="text" id="orgTitle" name="orgTitle" title="Your possition at least seven characters" autocomplete="on">
       </label>
-      <label for="userEmail">Your Email
+      <label>Your Email
         <input type="email" id="userEmail" name="userEmail" title="Your Email" placeholder="example@email.com" autocomplete="email" required>
       </label>
-      <label for="mobPhone">Mobile Phone Number
+      <label>Mobile Phone Number
         <input type="tel" id="mobPhone" name="mobPhone" title="Phone Number" autocomplete="tel" required>
       </label>
-      <label for="orgName">Organization's Name
+      <label>Organization's Name
         <input type="text" id="orgName" name="orgName" pattern="[A-Za-z\- ]{7,}" title="Business Name" autocomplete="on" required>
       </label>
       <fieldset>
         <legend>Merbership Level<span class="color"> *</span></legend>
         <div class="radio-group">
-          <label for="a">
+          <label>
             <input type="radio" name="mbs" id="a" value="0" required/>
             NP Membership</label>
-          <label for="b">
+          <label>
             <input type="radio" name="mbs" id="b" value="1"/>
             Bronze Membership</label>
-          <label for="c">
+          <label>
             <input type="radio" name="mbs" id="c" value="2"/>
             Silver Membership</label>
-          <label for="d">
+          <label>
             <input type="radio" name="mbs" id="d" value="3"/>
           Gold Membership</label>
         </div>
       </fieldset>
-      <label for="review">Business Description
+      <label>Business Description
         <textarea name="review" title="A little business description" id="review"></textarea>
       </label>
-      <label for="timestamp">
-        <input type="hidden" name="timestamp" id="timestamp" value="">
-      </label>
-      <label for="sentButton">
+      <input type="hidden" name="timestamp" id="timestamp" value="">
+      <label>
         <input type="submit" value="Join the Chamber" id="submit">
       </label>
       <p class="info">
