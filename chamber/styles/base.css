@@ -262,6 +262,121 @@ main h1 {
   font-size: 1.5rem;
 }
 
+/*--- JOIN PAGE ---*/
+
+#joinPage {
+  margin: 0 .5rem;
+}
+
+form {
+  background-color: #e4eef1;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  border: solid 1px #000;
+  margin: 1rem 0;
+  row-gap: 12px;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+label, fieldset {
+  font-size: 1.2rem;
+}
+
+label .opt {
+  color: darkblue;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="submit"],
+select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  resize: vertical;
+}
+
+.radio-group {
+  display: grid;
+}
+
+fieldset {
+  padding: 0rem;
+  margin: 0;
+  border:none
+}
+
+input, #product, option, textarea {
+  font-family: 'Edu QLD Beginner', sans-serif;
+  font-size: 1.2rem;
+}
+
+input[type=submit] {
+  background-color: rgb(155, 151, 151);
+  font-weight: bold;
+  font-family: 'Boogaloo', sans-serif;
+  font-size: 2rem;
+}
+
+.info {
+  font-size:1.2rem; 
+  color:#093663; 
+  margin-top:1rem;
+}
+
+.color {
+  text-shadow: .2px 0.2px 2px gray;
+}
+
+.review {
+  display: grid;
+  padding: 8rem 0;
+}
+
+.review h2 {
+  font-size: 2rem;
+}
+
+.review p {
+  font-size: 1.5rem;
+}
+
+
+#levels div {
+  background-color: rgb(155, 151, 151);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 5px;
+  border: solid 1px #000;
+}
+
+#levels p {
+  margin: 0;
+  font-size: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+#levels a {
+  margin: 0;
+  padding: 0;
+}
+
+#levels a p {
+  padding: .5rem;
+  border: 1px #000 solid;
+  margin: 0 2rem;
+  background-color: #e4eef1;
+}
+
 footer {
   margin: 1rem 0 0 0;
   padding-top: 0;

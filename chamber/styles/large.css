@@ -155,6 +155,24 @@
     flex: 1;
   }
 
+  /* JOIN */
+
+  #joinPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  #m-form {
+    grid-column: 1 / 2;
+  }
+
+  #levels {
+    grid-column: 2 / 3;
+  }
+
+
   footer {
     display: flex;
     justify-content: center;
@@ -183,6 +201,22 @@
 @media screen and (min-width: 720px) {
   header span {
     font-size: 2.5rem;
+  }
+
+  #levels a p {
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+
+  #joinPage {
+    margin: 0 4rem;
+    gap: 2rem;
+  }
+
+  #levels a p {
+    margin: 0 7rem;
   }
 }
 

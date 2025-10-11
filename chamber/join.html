@@ -37,36 +37,86 @@
       </ul>
     </nav>
   </header>
-  <main id="home">
-    <section id="hero">
-      <img src="./images/hero1.webp" alt="Hero image">
-      <a id="c-link" href="./index.html"><p>Join the chamber</p></a>
+  <main id="joinPage">
+    <section id="m-form">
+      <h2>Membership Application Form</h2>
+      <form action="thankyou.html" method="get">
+      <label for="firstName">First Name
+        <input type="text" id="firstName" name="firstName" autocomplete="on" required>
+      </label>
+      <label for="lastName">Last Name
+        <input type="text" id="lastName" name="lastName" autocomplete="on" required>
+      </label>
+      <label for="orgTitle">Organizational Title
+        <input type="text" id="orgTitle" name="orgTitle" autocomplete="on" required>
+      </label>
+      <label for="userEmail">Your Email
+        <input type="email" id="userEmail" name="userEmail" required>
+      </label>
+      <label for="mobPhone">Mobile Phone Number
+        <input type="tel" id="mobPhone" name="mobPhone" required>
+      </label>
+      <label for="orgName">Organization's Name
+        <input type="text" id="orgName" name="orgName" required>
+      </label>
+      <fieldset>
+        <legend>Merbership Level<span class="color"> *</span></legend>
+        <div class="radio-group">
+          <label for="a">
+            <input type="radio" name="mbs" id="a" value="0" required/>
+            NP Membership</label>
+          <label for="b">
+            <input type="radio" name="mbs" id="b" value="1"/>
+            Bronze Membership</label>
+          <label for="c">
+            <input type="radio" name="mbs" id="c" value="2"/>
+            Silver Membership</label>
+          <label for="d">
+            <input type="radio" name="mbs" id="d" value="3"/>
+          Gold Membership</label>
+        </div>
+      </fieldset>
+      <label for="review">Business Description
+        <textarea name="review" id="review"></textarea>
+      </label>
+      <label for="timestamp">
+        <input type="hidden" name="timestamp" id="timestamp" value="">
+      </label>
+      <label for="sentButton">
+        <input type="submit" value="Join the Chamber">
+      </label>
+      <p class="info">
+        We are committed to protecting your information.
+        The data you share will be used only to keep you informed and to facilitate your participation in the organization’s activities.
+      </p>
+    </form>
     </section>
-    <h1>Home</h1>
-    <section id="events">
-      <h2>Events</h2>
+    <section id="levels">
+      <h2>Membership Levels</h2>
+      <div>
+        <p>Non Profit Membership Level</p>
+        <a href="">
+          <p>Learn More</p>
+        </a>
+      </div>
+      <div>
+        <p>Bronze Membership Level</p>
+        <a href=""><p>Learn More</p></a>
+      </div>
+      <div>
+        <p>Silver Membership Level</p>
+        <a href="">
+          <p>Learn More</p>
+        </a>
+      </div>
+      <div>
+        <p>Gold Membership Level</p>
+        <a href="">
+          <p>Learn More</p>
+        </a>
+      </div>
     </section>
-    <section id="weather">
-      <h2>Current Weather</h2>
-      <div class="icon"></div>
-      <p><span id="temp"></span></p>
-      <p><span id="condit"></span></p>
-      <p>High: <span id="h-temp"></span></p>
-      <p>Low: <span id="l-temp"></span></p>
-      <p>Humidity: <span id="humidity"></span></p>
-      <p>Sun Rise: <span id="sun-rise"></span></p>
-      <p>Sun Set: <span id="sun-set"></span></p>
-    </section>
-    <section id="forecast">
-      <h2>Weather Forecast</h2>
-      <p><span id="today"></span></p>
-      <p><span id="tomorrow"></span></p>
-      <p><span id="afterTom"></span></p>
-    </section>
-    <section id="spotlights" class="grid">
-      
-    </section>
-  </main> 
+  </main>
   <footer>
     <div id="chamber-info">
       <p>São Paulo Chamber of Commerce</p>
