@@ -4,7 +4,7 @@
     overflow-x: hidden;
   }
 
-  button {
+  #menu {
     display: none;
   }
 
@@ -183,6 +183,7 @@
     margin-bottom: 3rem;
   }
 
+  /*   FOOTER    */
 
   footer {
     display: flex;

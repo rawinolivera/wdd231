@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./styles/base.css">
   <link rel="stylesheet" href="./styles/large.css">
   <script src="./scripts/base.js" defer></script>
+  <script src="./scripts/levels.js" defer></script>
 </head>
 <body>
   <header>
@@ -41,22 +42,22 @@
       <h2>Membership Application Form</h2>
       <form action="thankyou.html" method="get">
       <label for="firstName">First Name
-        <input type="text" id="firstName" name="firstName" autocomplete="on" required>
+        <input type="text" id="firstName" name="firstName" title="Your first name" autocomplete="on" required>
       </label>
       <label for="lastName">Last Name
-        <input type="text" id="lastName" name="lastName" autocomplete="on" required>
+        <input type="text" id="lastName" name="lastName" title="Your last name" autocomplete="on" required>
       </label>
       <label for="orgTitle">Organizational Title
-        <input type="text" id="orgTitle" name="orgTitle" autocomplete="on">
+        <input type="text" id="orgTitle" name="orgTitle" title="Your possition at least seven characters" autocomplete="on">
       </label>
       <label for="userEmail">Your Email
-        <input type="email" id="userEmail" name="userEmail" required>
+        <input type="email" id="userEmail" name="userEmail" title="Your Email" placeholder="example@email.com" autocomplete="email" required>
       </label>
       <label for="mobPhone">Mobile Phone Number
-        <input type="tel" id="mobPhone" name="mobPhone" required>
+        <input type="tel" id="mobPhone" name="mobPhone" title="Phone Number" autocomplete="tel" required>
       </label>
       <label for="orgName">Organization's Name
-        <input type="text" id="orgName" name="orgName" required>
+        <input type="text" id="orgName" name="orgName" pattern="[A-Za-z\- ]{7,}" title="Business Name" autocomplete="on" required>
       </label>
       <fieldset>
         <legend>Merbership Level<span class="color"> *</span></legend>
@@ -76,7 +77,7 @@
         </div>
       </fieldset>
       <label for="review">Business Description
-        <textarea name="review" id="review"></textarea>
+        <textarea name="review" title="A little business description" id="review"></textarea>
       </label>
       <label for="timestamp">
         <input type="hidden" name="timestamp" id="timestamp" value="">
@@ -94,26 +95,71 @@
       <h2>Membership Levels</h2>
       <div class="np">
         <p>Non Profit Membership Level</p>
-        <a href="">
-          <p>Learn More</p>
-        </a>
+        <a href="" id="npbtn"><p>Learn More</p></a>
       </div>
       <div class="bm">
         <p>Bronze Membership Level</p>
-        <a href=""><p>Learn More</p></a>
+        <a href="" id="bmbtn"><p>Learn More</p></a>
       </div>
       <div class="sm">
         <p>Silver Membership Level</p>
-        <a href="">
-          <p>Learn More</p>
-        </a>
+        <a href="" id="smbtn"><p>Learn More</p></a>
       </div>
       <div class="gm">
         <p>Gold Membership Level</p>
-        <a href="">
-          <p>Learn More</p>
+        <a href="" id="gmbtn">
+          <p >Learn More</p>
         </a>
       </div>
+      <dialog id="np-di">
+        <h2>Non Profit Membership Level</h2>
+        <ul class="listBenefits">
+          <li>Be part of the chamber of commerce.</li>
+          <li>Receive emails with event information.</li>
+          <li>Free training access - once every month. </li>
+          <li>Join for free, perfect for getting started.</li>
+        </ul>
+        <button id="closeNP">Close</button>
+      </dialog>
+      <dialog id="bm-di">
+        <h2>Bronze Membership Level</h2>
+        <ul class="listBenefits">
+          <li>Be part of the chamber of commerce.</li>
+          <li>Receive emails with event information.</li>
+          <li>Access to weekly trainnings.</li>
+          <li>10% off to monthly events.</li>
+          <li>One Online Advisory per month.</li>
+          <li>$15 – Great for getting started</li>
+        </ul>
+        <button id="closeBM">Close</button>
+      </dialog>
+      <dialog id="sm-di">
+        <h2>Silver Membership Level</h2>
+        <ul class="listBenefits">
+          <li>Be part of the chamber of commerce.</li>
+          <li>Receive emails with event information.</li>
+          <li>Access to weekly trainnings.</li>
+          <li>25% off to monthly events.</li>
+          <li>Online Advisory when needed.</li>
+          <li>One visit per month | personal advisory.</li>
+          <li>$20 – Perfect for regular users</li>
+        </ul>
+        <button id="closeSM">Close</button>
+      </dialog>
+      <dialog id="gm-di">
+        <h2>Gold Membership Level</h2>
+        <ul class="listBenefits">
+          <li>Be part of the chamber of commerce.</li>
+          <li>Receive emails with event information.</li>
+          <li>Access to weekly trainnings.</li>
+          <li>45% off to monthly events.</li>
+          <li>Online or Personal  Advisory | when needed.</li>
+          <li>Advertise on our website home page.</li>
+          <li>Advisor Agent assigned to your business.</li>
+          <li>$45 – Best value with premium features</li>
+        </ul>
+        <button id="closeGM">Close</button>
+      </dialog>
     </section>
   </main>
   <footer>

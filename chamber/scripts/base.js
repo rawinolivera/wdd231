@@ -27,21 +27,3 @@ links.forEach(link => {
     link.classList.add("active");
   }
 });
-
-const submit = document.querySelector("#submit");
-if(submit){
-  const time = new Date();
-  const formatted = time.toLocaleString('en-GB', {
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-  });
-
-  const timestamp = document.querySelector("#timestamp");
-  submit.addEventListener("click", () => {
-    timestamp.value = `${formatted}`;
-  });
-}
