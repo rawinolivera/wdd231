@@ -18,8 +18,6 @@
   <link rel="stylesheet" href="./styles/base.css">
   <link rel="stylesheet" href="./styles/large.css">
   <script src="./scripts/base.js" defer></script>
-  <script type="module" src="./scripts/spotlights.js"></script>
-  <script src="./scripts/weather.js" defer></script>
 </head>
 <body>
   <header>
@@ -38,6 +36,7 @@
     </nav>
   </header>
   <main id="joinPage">
+    <h1>Join Page</h1>
     <section id="m-form">
       <h2>Membership Application Form</h2>
       <form action="thankyou.html" method="get">
@@ -48,7 +47,7 @@
         <input type="text" id="lastName" name="lastName" autocomplete="on" required>
       </label>
       <label for="orgTitle">Organizational Title
-        <input type="text" id="orgTitle" name="orgTitle" autocomplete="on" required>
+        <input type="text" id="orgTitle" name="orgTitle" autocomplete="on">
       </label>
       <label for="userEmail">Your Email
         <input type="email" id="userEmail" name="userEmail" required>
@@ -83,7 +82,7 @@
         <input type="hidden" name="timestamp" id="timestamp" value="">
       </label>
       <label for="sentButton">
-        <input type="submit" value="Join the Chamber">
+        <input type="submit" value="Join the Chamber" id="submit">
       </label>
       <p class="info">
         We are committed to protecting your information.
@@ -93,23 +92,23 @@
     </section>
     <section id="levels">
       <h2>Membership Levels</h2>
-      <div>
+      <div class="np">
         <p>Non Profit Membership Level</p>
         <a href="">
           <p>Learn More</p>
         </a>
       </div>
-      <div>
+      <div class="bm">
         <p>Bronze Membership Level</p>
         <a href=""><p>Learn More</p></a>
       </div>
-      <div>
+      <div class="sm">
         <p>Silver Membership Level</p>
         <a href="">
           <p>Learn More</p>
         </a>
       </div>
-      <div>
+      <div class="gm">
         <p>Gold Membership Level</p>
         <a href="">
           <p>Learn More</p>
