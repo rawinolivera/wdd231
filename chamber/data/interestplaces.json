@@ -1,58 +1,52 @@
-[
-  {
-    "name": "Ibirapuera Park",
-    "address": "Av. Pedro Álvares Cabral - Vila Mariana, São Paulo",
-    "description": "A vast urban park featuring lakes, gardens, and walking trails. Ideal for outdoor activities, cultural events, and visiting museums located inside the park, offering a peaceful escape in the city.",
-    "imagelink": "",
-    "link": "https://en.wikipedia.org/wiki/Ibirapuera_Park"
-  },
-  {
-    "name": "Catavento Museum",
-    "address": "Praça Cívica Ulisses Guimarães, 1 - Centro, São Paulo",
-    "description": "Interactive science museum offering exhibits on physics, biology, and technology. Visitors can engage with hands-on experiments and educational activities suitable for children and adults, making learning enjoyable and memorable.",
-    "imagelink": "",
-    "link": "https://en.wikipedia.org/wiki/Catavento_Museum"
-  },
-  {
-    "name": "Roda Rico",
-    "address": "Av. Manuel Bandeira - Jaguaré, São Paulo",
-    "description": "Observation wheel standing 91 meters tall, providing panoramic views of São Paulo. Located in Parque Cândido Portinari, it is perfect for photography, sightseeing, and enjoying the city from a unique perspective.",
-    "imagelink": "",
-    "link": "https://en.wikipedia.org/wiki/Roda_Rico"
-  },
-  {
-    "name": "Museum of Contemporary Art (MAC-USP)",
-    "address": "Av. Pedro Álvares Cabral, 1301 - Ibirapuera, São Paulo",
-    "description": "One of Brazil's most prominent contemporary art museums, featuring works by Brazilian and international artists. The collection includes paintings, sculptures, and installations, showcasing creativity and innovation.",
-    "imagelink": "",
-    "link": "https://en.wikipedia.org/wiki/Museum_of_Contemporary_Art,_University_of_São_Paulo"
-  },
-  {
-    "name": "São Paulo Botanical Garden",
-    "address": "Av. Miguel Stéfano, 3031 - Água Funda, São Paulo",
-    "description": "A serene botanical garden with diverse plant species, walking trails, and well-kept landscapes. Perfect for nature walks, photography, and learning about local and exotic flora in a peaceful setting.",
-    "imagelink": "",
-    "link": "https://pt.hoteis.com/go/brazil/things-to-do-sao-paulo"
-  },
-  {
-    "name": "Beco do Batman",
-    "address": "Vila Madalena, São Paulo",
-    "description": "A famous alley featuring vibrant street art and graffiti. The area showcases urban creativity and attracts artists, photographers, and tourists seeking a colorful, dynamic, and visually stimulating experience.",
-    "imagelink": "",
-    "link": "https://pt.hoteis.com/go/brazil/things-to-do-sao-paulo"
-  },
-  {
-    "name": "Pinacoteca do Estado de São Paulo",
-    "address": "Praça da Luz, 2 - Centro, São Paulo",
-    "description": "Renowned art museum housing Brazilian art from the 19th century to contemporary works. Its collection, architecture, and gardens provide an immersive cultural and artistic experience for all visitors.",
-    "imagelink": "",
-    "link": "https://www.tripadvisor.com.br/Attractions-g303631-Activities-Sao_Paulo_State_of_Sao_Paulo.html"
-  },
-  {
-    "name": "Avenida Paulista",
-    "address": "Avenida Paulista, São Paulo",
-    "description": "Iconic avenue in São Paulo featuring cultural centers, shops, and skyscrapers. On Sundays, traffic closes for pedestrians, allowing street performances, markets, and public gatherings, creating a lively city experience.",
-    "imagelink": "",
-    "link": "https://losviajesdenena.com/que-ver-y-que-hacer-en-sao-paulo-lo-que-no-podes-perderte/"
-  }
-]
+{
+  "events": [
+    {
+      "name": "Ibirapuera Park",
+      "address": "Av. Pedro Álvares Cabral - Vila Mariana, São Paulo",
+      "description": "A vast urban park featuring lakes, gardens, and walking trails. Ideal for outdoor activities, cultural events, and visiting museums located inside the park, offering a peaceful escape in the city.",
+      "imagelink": "https://rawinolivera.github.io/wdd231/chamber/images/ibirapueira.webp"
+    },
+    {
+      "name": "Catavento Museum",
+      "address": "Praça Cívica Ulisses Guimarães, 1 - Centro, São Paulo",
+      "description": "Interactive science museum offering exhibits on physics, biology, and technology. Visitors can engage with hands-on experiments and educational activities suitable for children and adults, making learning enjoyable and memorable.",
+      "imagelink": "https://rawinolivera.github.io/wdd231/chamber/images/catavento.webp"
+    },
+    {
+      "name": "Roda Rico",
+      "address": "Av. Manuel Bandeira - Jaguaré, São Paulo",
+      "description": "Observation wheel standing 91 meters tall, providing panoramic views of São Paulo. Located in Parque Cândido Portinari, it is perfect for photography, sightseeing, and enjoying the city from a unique perspective.",
+      "imagelink": "https://rawinolivera.github.io/wdd231/chamber/images/roda-rico.webp"
+    },
+    {
+      "name": "Museum of Contemporary Art (MAC-USP)",
+      "address": "Av. Pedro Álvares Cabral, 1301 - Ibirapuera, São Paulo",
+      "description": "One of Brazil's most prominent contemporary art museums, featuring works by Brazilian and international artists. The collection includes paintings, sculptures, and installations, showcasing creativity and innovation.",
+      "imagelink": "https://rawinolivera.github.io/wdd231/chamber/images/museu-artecon.webp"
+    },
+    {
+      "name": "São Paulo Botanical Garden",
+      "address": "Av. Miguel Stéfano, 3031 - Água Funda, São Paulo",
+      "description": "A serene botanical garden with diverse plant species, walking trails, and well-kept landscapes. Perfect for nature walks, photography, and learning about local and exotic flora in a peaceful setting.",
+      "imagelink": "https://rawinolivera.github.io/wdd231/chamber/images/botanico.webp"
+    },
+    {
+      "name": "Beco do Batman",
+      "address": "Vila Madalena, São Paulo",
+      "description": "A famous alley featuring vibrant street art and graffiti. The area showcases urban creativity and attracts artists, photographers, and tourists seeking a colorful, dynamic, and visually stimulating experience.",
+      "imagelink": "https://rawinolivera.github.io/wdd231/chamber/images/beco-batman.webp"
+    },
+    {
+      "name": "Pinacoteca do Estado de São Paulo",
+      "address": "Praça da Luz, 2 - Centro, São Paulo",
+      "description": "Renowned art museum housing Brazilian art from the 19th century to contemporary works. Its collection, architecture, and gardens provide an immersive cultural and artistic experience for all visitors.",
+      "imagelink": "https://rawinolivera.github.io/wdd231/chamber/images/pinacoteca.webp"
+    },
+    {
+      "name": "Avenida Paulista",
+      "address": "Avenida Paulista, São Paulo",
+      "description": "Iconic avenue in São Paulo featuring cultural centers, shops, and skyscrapers. On Sundays, traffic closes for pedestrians, allowing street performances, markets, and public gatherings, creating a lively city experience.",
+      "imagelink": "https://rawinolivera.github.io/wdd231/chamber/images/paulista.webp"
+    }
+  ]
+}
