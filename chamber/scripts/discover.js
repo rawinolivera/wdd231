@@ -1,29 +1,29 @@
-function displayMembers() {
+function displayPlaces(place, container) {
 let card = document.createElement("section");
-let name = document.createElement("p");
-let address = document.createElement("p");
-let description = document.createElement("p");
+let name = document.createElement("h2");
+let figure = document.createElement("figure");
 let image = document.createElement("img");
+let address = document.createElement("address");
+let description = document.createElement("p");
+let button = document.createElement("button");
 
-name.textContent = `${member.name}`;
+name.textContent = `${place.name}`;
 name.className = "m-name";
-address.textContent = `${member.address}`;
-phoneNumber.textContent = `${member.phone_number}`;
-url.href = `${member.website_url}`;
-url.textContent = `${member.website_url}`;
-url.target = "_blank";
+address.textContent = `${place.address}`;
+description.textContent = `${place.description}`;
 image.className = "img";
-image.src = `${member.icon_url}`;
-image.alt = `Company Official Logo`;
+image.src = `${place.imagelink}`;
+image.alt = `${place.name} photo`;
+button.textContent = "Learn More";
 
+figure.appendChild(image);
 card.appendChild(name);
-card.appendChild(image);
+card.appendChild(figure);
 card.appendChild(address);
-card.appendChild(phoneNumber);
-card.appendChild(url);
+card.appendChild(description);
+card.appendChild(button);
 
 container.appendChild(card);
-name.style.display = "none";
 }
 
 //data
@@ -34,9 +34,13 @@ async function loadInterest() {
   try {
     const response = await fetch(requestURL);
     const jsonObject = await response.json();
-    const place = jsonObject['members'];
-    members.forEach(m => displayMembers(m, dir));
+    const places = jsonObject['places'];
+    places.forEach(p => displayPlaces(p, dir));
   } catch (error) {
-    console.error("Members not found:", error);
+    console.error("Interest Places not found:", error);
   }
+}
+
+if (dir) {
+  loadInterest();
 }
