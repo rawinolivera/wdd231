@@ -459,25 +459,42 @@ dialog::backdrop {
   display: grid;
   border: solid 1px #000;
   border-radius: 10px;
+  overflow: hidden;
+  grid-template-areas: 
+  "name"
+  "photograph"
+  "description"
+  "location"
+  "learn-more";
 }
 
 #interest h2 {
   padding-left: .5rem;
+  grid-area: name;
 }
 
 #interest figure {
   margin: 0;
+  grid-area: photograph;
 }
 
 #interest img {
   width: 100%;
 }
 
-#interest address, #interest p {
+#interest address {
   padding: .5rem;
   font-size: 1.2rem;
-  overflow: hidden;           /* oculta el contenido que se desborda */
   text-overflow: ellipsis;
+  grid-area: location;
+}
+
+#interest p {
+  padding: .5rem;
+  margin: .5rem 0;
+  font-size: 1.2rem;
+  text-overflow: ellipsis;
+  grid-area: description;
 }
 
 #interest button {
@@ -488,6 +505,7 @@ dialog::backdrop {
   font-size: 1.2rem;
   background-color: #000;
   color: #fff;
+  grid-area: learn-more;
 }
 
 #interest button:hover {

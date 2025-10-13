@@ -1,24 +1,25 @@
 function displayPlaces(place, container) {
 let card = document.createElement("section");
-let name = document.createElement("h2");
 let figure = document.createElement("figure");
 let image = document.createElement("img");
+let name = document.createElement("h2");
 let address = document.createElement("address");
 let description = document.createElement("p");
 let button = document.createElement("button");
 
+
+image.className = "img";
+image.src = `${place.imagelink}`;
+image.alt = `${place.name} photo`;
 name.textContent = `${place.name}`;
 name.className = "m-name";
 address.textContent = `${place.address}`;
 description.textContent = `${place.description}`;
-image.className = "img";
-image.src = `${place.imagelink}`;
-image.alt = `${place.name} photo`;
 button.textContent = "Learn More";
 
 figure.appendChild(image);
-card.appendChild(name);
 card.appendChild(figure);
+card.appendChild(name);
 card.appendChild(address);
 card.appendChild(description);
 card.appendChild(button);
