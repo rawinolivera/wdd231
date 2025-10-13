@@ -45,3 +45,48 @@ async function loadInterest() {
 if (dir) {
   loadInterest();
 }
+
+//local storage
+let lastVisite = localStorage.getItem('lastVisit');
+let now = new Date();
+const msg = document.querySelector("#msg");
+const modalOpen = document.querySelector("#openMsg");
+const modalClose = document.querySelector("#closeMsg")
+
+console.log(lastVisite)
+
+if (!lastVisite) {
+  localStorage.setItem('lastVisit', now)
+  console.log("Welcome! Let us know if you have any questions.")
+  msg.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+
+  let last = new Date(lastVisite);
+  let milisec = now - last;
+
+  let count = milisec / 86400000;
+  count = Math.trunc(count);
+  if(count < 1) {
+    console.log("Back so soon! Awesome!")
+    msg.textContent = "Back so soon! Awesome!";
+  } else if (count === 1) {
+    console.log("You last visited " + count + " day ago.");
+    msg.textContent = `You last visited ${count} day ago.`;
+  } else {
+    console.log("You last visited " + count + " days ago.")
+    msg.textContent = `You last visited ${count} days ago.`;
+  }
+  localStorage.setItem('lastVisit', now)
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  modalOpen.showModal();
+});
+
+modalClose.addEventListener("click", () => {
+  modalOpen.close();
+})
+
+
+
+
