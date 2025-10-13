@@ -53,6 +53,10 @@ let now = new Date();
 const msg = document.querySelector("#msg");
 const modalOpen = document.querySelector("#openMsg");
 const modalClose = document.querySelector("#closeMsg")
+let big = document.createElement("h2");
+big.appendChild(msg);
+modalOpen.appendChild(big);
+modalOpen.appendChild(modalClose);
 
 console.log(lastVisite)
 
