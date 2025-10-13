@@ -9,6 +9,7 @@ let button = document.createElement("button");
 
 
 image.className = "img";
+image.loading ="lazy";
 image.src = `${place.imagelink}`;
 image.alt = `${place.name} photo`;
 name.textContent = `${place.name}`;
