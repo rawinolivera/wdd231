@@ -79,9 +79,9 @@ if (!lastVisite) {
   localStorage.setItem('lastVisit', now)
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('scroll', function() {
   modalOpen.showModal();
-});
+}, { once: true });
 
 modalClose.addEventListener("click", () => {
   modalOpen.close();
