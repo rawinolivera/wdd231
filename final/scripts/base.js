@@ -125,3 +125,25 @@ links.forEach(link => {
 if (currentPage === 'index.html') {
   homeItems();
 }
+
+function setFormTime() {
+  const submit = document.querySelector("#submit");
+
+  const timestamp = document.querySelector("#timestamp");
+  submit.addEventListener("click", () => {
+    const time = new Date();
+    const formatted = time.toLocaleString('en-GB', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  });
+    timestamp.value = `${formatted}`;
+  });
+}
+
+if(currentPage === 'joinus.html'){
+  setFormTime();
+}

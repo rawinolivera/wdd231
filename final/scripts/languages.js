@@ -14,25 +14,20 @@ let btnOpen = document.createElement("button");
 let btnClose = document.createElement("button");
 
 
-//image.className = "img";
-//image.loading ="lazy";
-//image.src = `${lang.imagelink}`;
-//image.alt = `${lang.name} photo`;
 dialog.id = `${lang.id}`;
-title.textContent = `${lang.name}`;
+title.textContent = `${lang.name} Language`;
 btnClose.id = `close-${lang.id}`;
 btnClose.textContent = "Close";
 name.textContent = `${lang.name} Language`;
 name.className = "m-name";
-paradig.textContent = `${lang.paradigm}`;
+paradig.textContent = `Paradig: ${lang.paradigm}`;
 org.textContent = `${lang.organization}`;
 year.textContent = `Release year: ${lang.year}`;
 history.textContent = `${lang.history}`;
 btnOpen.id = `open-${lang.id}`;
 btnOpen.textContent = "Learn More";
 
-//figure.appendChild(image);
-//card.appendChild(figure);
+
 card.appendChild(name);
 card.appendChild(org);
 card.appendChild(year);
@@ -41,10 +36,21 @@ card.appendChild(btnOpen);
 container.appendChild(card);
 
 dialog.appendChild(title);
+dialog.appendChild(paradig)
 dialog.appendChild(history);
 dialog.appendChild(btnClose)
 
 di.appendChild(dialog);
+
+btnOpen.addEventListener("click", () => {
+  const dialog = document.getElementById(lang.id);
+  if (dialog) dialog.showModal();
+});
+
+btnClose.addEventListener("click", () => {
+  const dialog = document.getElementById(lang.id);
+  if (dialog) dialog.close();
+});
 
 }
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Software Plus Learning and Resources">
   <meta name="author" content="Rawin Olivera">
-  <meta property="og:title" content="Join Page - Software Pluse">
+  <meta property="og:title" content="Resources - Software Pluse">
   <meta property="og:description" content="Enjoy learning more about the Software Development World with a variety of good resources.">
   <meta property="og:image" content="https://rawinolivera.github.io/wdd231/final/images/solving.webp">
   <meta property="og:url" content="https://rawinolivera.github.io/wdd231/final/index.html">
@@ -20,6 +20,7 @@
   <link rel="preload" href="./styles/large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="./styles/large.css"></noscript>
   <script src="./scripts/base.js" defer></script>
+  <script src="./scripts/form.js" defer></script>
 </head>
 <body>
   <header>
@@ -31,67 +32,17 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="join.html">Join</a></li>
+        <li><a href="joinus.html">Join</a></li>
         <li><a href="resources.html">Resources</a></li>
       </ul>
     </nav>
   </header>
-  <main class="joinus">
-    <div class="side"> 
-      <h2>“Be part of a community passionate about continuous improvement in software development. Share ideas, learn from others, and stay updated with best practices.”</h2>
-      <img src="./images/join.webp" alt="Join pic" loading="lazy">
-    </div>
-
-    <form action="thankyou.html" method="get">
-      <label>First Name
-        <input type="text" id="firstName" name="firstName" title="Your first name" autocomplete="on" required>
-      </label>
-      <label>Last Name
-        <input type="text" id="lastName" name="lastName" title="Your last name" autocomplete="on" required>
-      </label>
-      <label>Your Email
-        <input type="email" id="userEmail" name="userEmail" autocomplete="email" required>
-      </label>
-      <label>Mobile Phone Number
-        <input type="tel" id="mobPhone" name="mobPhone" title="Phone Number" autocomplete="tel" required>
-      </label>
-      <fieldset>
-        <legend>About you:<span class="color"> *</span></legend>
-        <div class="radio-group">
-          
-          <label>
-            <input type="radio" name="stars" id="star-a" value="5" required/>
-            Tech Student</label>
-          <label>
-            <input type="radio" name="stars" id="star-b" value="4"/>
-            Tech Professional</label>
-          <label><input type="radio" name="stars" id="star-c" value="3"/>
-            Other</label>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>What is your insterest?<br>(Check all that apply)</legend>
-          <label class="checkbox-item" for="feature4">
-            <input type="checkbox" id="feature4" name="use" value="4">
-            I wish to colaborate
-          </label>
-          <label class="checkbox-item" for="feature3">
-            <input type="checkbox" id="feature3" name="use" value="3">
-            I wish to receive news
-          </label>
-      </fieldset>
-      <label>Comments <span class="opt">(Optional)</span>
-        <textarea name="review" id="review"></textarea>
-      </label>
-      <input type="hidden" name="timestamp" id="timestamp" value="">
-      <label>
-        <input type="submit" id="submit" value="Join Us">
-      </label>
-      <p class="info">
-        Your information will only be used to send you updates and content related to software improvement. 
-        We do not share your data with third parties.
-      </p>
-    </form>
+  <main id="thankyou">
+      <h1>Thank you join us!</h1>
+      <h2>Register Data:</h2>
+      <div id="dataForm">
+        
+      </div>
   </main>
   <footer>
     <div id="chamber-info">
