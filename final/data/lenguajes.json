@@ -1,0 +1,109 @@
+{
+  "languages" : [
+    {
+      "name": "Python",
+      "paradigm": "Multi-paradigm: imperative, object-oriented, functional",
+      "organization": "Python Software Foundation",
+      "year": 1991,
+      "history": "Python was created by Guido van Rossum in the late 1980s as a successor to ABC. First released in 1991, it emphasized readability and simplicity. Its huge standard library, open-source nature, and community support made it a dominant choice for automation, web development, and data science across industries."
+    },
+    {
+      "name": "JavaScript",
+      "paradigm": "Multi-paradigm: event-driven, functional, imperative",
+      "organization": "ECMA International",
+      "year": 1995,
+      "history": "Developed by Brendan Eich at Netscape in 1995, JavaScript was designed to bring interactivity to web pages. It later became standardized as ECMAScript. Over time, JavaScript evolved into a full ecosystem supporting both front-end and back-end development, forming the foundation of modern web and application frameworks worldwide."
+    },
+    {
+      "name": "Java",
+      "paradigm": "Object-oriented, class-based",
+      "organization": "Oracle (originally Sun Microsystems)",
+      "year": 1995,
+      "history": "Created by James Gosling at Sun Microsystems, Java was launched in 1995 with the slogan 'write once, run anywhere.' Its virtual machine concept enabled cross-platform execution. Java became a cornerstone of enterprise systems, Android development, and academic learning, remaining a stable and widely adopted technology decades later."
+    },
+    {
+      "name": "C",
+      "paradigm": "Imperative, structured, procedural",
+      "organization": "Bell Labs",
+      "year": 1972,
+      "history": "Developed by Dennis Ritchie at Bell Labs in 1972, C was designed to build the Unix operating system. It introduced structured programming concepts and efficient memory management. C directly influenced many later languages, including C++, C#, and Java, and continues to be vital in system and embedded programming today."
+    },
+    {
+      "name": "C++",
+      "paradigm": "Multi-paradigm: procedural, object-oriented, generic",
+      "organization": "ISO / Bjarne Stroustrup",
+      "year": 1985,
+      "history": "C++ was created by Bjarne Stroustrup in 1985 as an extension of the C language with object-oriented and generic programming support. It allows fine control over hardware resources. C++ became essential for high-performance software, operating systems, and games, blending power, abstraction, and efficiency like few others."
+    },
+    {
+      "name": "C#",
+      "paradigm": "Multi-paradigm: object-oriented, component-oriented",
+      "organization": "Microsoft",
+      "year": 2000,
+      "history": "C# was developed by Anders Hejlsberg and Microsoft as part of the .NET framework in 2000. It combines simplicity, safety, and flexibility for desktop, web, and mobile apps. C# supports modern programming features, strong typing, and asynchronous operations, becoming a top choice for enterprise and game development through Unity."
+    },
+    {
+      "name": "TypeScript",
+      "paradigm": "Multi-paradigm: object-oriented, functional, typed superset of JavaScript",
+      "organization": "Microsoft",
+      "year": 2012,
+      "history": "TypeScript was introduced by Microsoft in 2012 to enhance JavaScript with optional static typing. It improves scalability and maintainability for large applications. TypeScript compiles to JavaScript, ensuring compatibility with browsers while providing modern developer tools. It has become a key technology for professional web and front-end development."
+    },
+    {
+      "name": "Go",
+      "paradigm": "Compiled, concurrent, procedural",
+      "organization": "Google",
+      "year": 2009,
+      "history": "Go, or Golang, was created at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Released in 2009, it emphasizes simplicity, concurrency, and performance. Its fast compilation and clean syntax make it ideal for distributed systems, cloud services, and modern server-side development, gaining steady adoption worldwide."
+    },
+    {
+      "name": "Rust",
+      "paradigm": "Multi-paradigm: systems, concurrent, safe memory management",
+      "organization": "Rust Foundation (formerly Mozilla)",
+      "year": 2015,
+      "history": "Rust originated from a Mozilla project by Graydon Hoare and became officially released in 2015. It was designed for safety and concurrency without sacrificing performance. By eliminating common memory bugs, Rust gained popularity for systems programming, replacing unsafe C/C++ code in critical infrastructure and modern software projects."
+    },
+    {
+      "name": "PHP",
+      "paradigm": "Imperative, object-oriented, functional",
+      "organization": "The PHP Group",
+      "year": 1995,
+      "history": "PHP was created by Rasmus Lerdorf in 1995 to build dynamic websites. It evolved from simple scripts to a full server-side language. Powering major platforms like WordPress and Facebook, PHP remains deeply integrated in web development, with frameworks like Laravel ensuring modern performance and scalability."
+    },
+    {
+      "name": "SQL",
+      "paradigm": "Declarative, data query",
+      "organization": "ANSI / ISO",
+      "year": 1974,
+      "history": "SQL was developed at IBM in 1974 by Donald Chamberlin and Raymond Boyce. It became the universal standard for managing relational databases. SQL allows users to query, insert, update, and analyze structured data efficiently. Nearly all modern database systems support it, making SQL a timeless data management language."
+    },
+    {
+      "name": "R",
+      "paradigm": "Multi-paradigm: procedural, functional, object-oriented",
+      "organization": "R Foundation",
+      "year": 1993,
+      "history": "R was created by Ross Ihaka and Robert Gentleman at the University of Auckland in 1993. Designed for statistics and data visualization, it became a key tool for researchers and data scientists. With thousands of libraries and open-source support, R remains strong in analytics, academia, and scientific computing."
+    },
+    {
+      "name": "Swift",
+      "paradigm": "Multi-paradigm: object-oriented, functional, protocol-oriented",
+      "organization": "Apple Inc.",
+      "year": 2014,
+      "history": "Swift was developed by Apple as a modern alternative to Objective-C. Released in 2014, it offers speed, safety, and concise syntax for iOS and macOS apps. Swift gained rapid adoption thanks to open-source distribution, performance optimization, and continuous support from Apple’s developer ecosystem."
+    },
+    {
+      "name": "Kotlin",
+      "paradigm": "Multi-paradigm: object-oriented, functional",
+      "organization": "JetBrains / Google",
+      "year": 2011,
+      "history": "Kotlin was introduced by JetBrains in 2011 as a concise, safe, and interoperable language with Java. Officially supported by Google for Android, it quickly became a favorite among mobile developers. Kotlin also extends to web and server-side applications, offering expressive syntax and modern programming capabilities."
+    },
+    {
+      "name": "Ruby",
+      "paradigm": "Multi-paradigm: object-oriented, functional",
+      "organization": "Ruby Association / Yukihiro Matsumoto",
+      "year": 1995,
+      "history": "Ruby was created in 1995 by Yukihiro Matsumoto in Japan. It focused on programmer happiness, simplicity, and elegant syntax. Its Ruby on Rails framework revolutionized web development in the 2000s, enabling rapid, maintainable web applications. Ruby remains valued for its readability and community-driven evolution."
+    }
+  ]
+}

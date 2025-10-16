@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber Home Page">
+  <meta name="author" content="Rawin Olivera">
+  <meta property="og:title" content="Homepage - São Paulo Chamber of Commerce">
+  <meta property="og:description" content="Find business information, events, and more related to members of the São Paulo Chamber of Commerce.">
+  <meta property="og:image" content="https://rawinolivera.github.io/wdd231/chamber/images/sao-paulo.webp">
+  <meta property="og:url" content="https://rawinolivera.github.io/wdd231/chamber/index.html">
+  <link rel="preload" href="./styles/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="./styles/normalize.css"></noscript>
+  <title>Software Plus</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Edu+QLD+Beginner:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <link rel="preload" href="./styles/base.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./styles/base.css"></noscript>
+  <link rel="preload" href="./styles/large.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./styles/large.css"></noscript>
+  <script src="./scripts/base.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="./images/logo.svg" alt="Site Logo">
+    </a>
+    <span>Software Plus</span>
+    <button id="menu"></button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="joinus">
+    <div class="side"> 
+      <h2>“Be part of a community passionate about continuous improvement in software development. Share ideas, learn from others, and stay updated with best practices.”</h2>
+      <img src="../images/join.webp" alt="Join pic" loading="lazy">
+    </div>
+
+    <form action="review.html" method="get">
+      <label for="userName">Your Name
+        <input type="text" id="userName" name="userName" autocomplete="name" required>
+      </label>
+      <label for="userEmail">Your Email
+        <input type="email" id="userEmail" name="userEmail" autocomplete="email" required>
+      </label>
+      <fieldset>
+        <legend>About you:<span class="color"> *</span></legend>
+        <div class="radio-group">
+          
+          <label for="star-a">
+            <input type="radio" name="stars" id="star-a" value="5" required/>
+            Tech Student</label>
+          <label for="star-b">
+            <input type="radio" name="stars" id="star-b" value="4"/>
+            Tech Professional</label>
+          <label for="star-c"><input type="radio" name="stars" id="star-c" value="3"/>
+            Other</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>What is your insterest?<br>(Check all that apply)</legend>
+          <label class="checkbox-item" for="feature4">
+            <input type="checkbox" id="feature4" name="use" value="4">
+            I wish to colaborate
+          </label>
+          <label class="checkbox-item" for="feature3">
+            <input type="checkbox" id="feature3" name="use" value="3" required>
+            I wish to receive news
+          </label>
+      </fieldset>
+      <label for="review">Comments <span class="opt">(Optional)</span>
+        <textarea name="review" id="review"></textarea>
+      </label>
+      <input type="submit" value="Post Review">
+      <p class="info">
+        Your information will only be used to send you updates and content related to software improvement. 
+        We do not share your data with third parties.
+      </p>
+    </form>
+  </main>
+  <footer>
+    <div id="chamber-info">
+      <p>Software Development</p>
+      <p>Web and Computer Programming</p>
+      <p>WDD231 Final Project</p>
+    </div>
+    <div id="social">
+      <img src="./images/linkedin-logo.svg" alt="LinkedIn-icon">
+      <img src="./images/facebook-logo.svg" alt="GitHub-icom">
+      <img src="./images/whatsapp-logo.svg" alt="Whatsapp-icon">
+    </div>
+    <div id="info">
+      <p>Rawin Olivera</p>
+      <p>&#169;<span id="current-year"></span> Venezuela</p>
+      <p>Last Modified: <span id="last-mod"></span></p>
+    </div>
+  </footer>
+</body> 
+</html>
