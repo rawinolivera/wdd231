@@ -43,11 +43,17 @@
     </div>
 
     <form action="review.html" method="get">
-      <label for="userName">Your Name
-        <input type="text" id="userName" name="userName" autocomplete="name" required>
+      <label>First Name
+        <input type="text" id="firstName" name="firstName" title="Your first name" autocomplete="on" required>
       </label>
-      <label for="userEmail">Your Email
+      <label>Last Name
+        <input type="text" id="lastName" name="lastName" title="Your last name" autocomplete="on" required>
+      </label>
+      <label>Your Email
         <input type="email" id="userEmail" name="userEmail" autocomplete="email" required>
+      </label>
+      <label>Mobile Phone Number
+        <input type="tel" id="mobPhone" name="mobPhone" title="Phone Number" autocomplete="tel" required>
       </label>
       <fieldset>
         <legend>About you:<span class="color"> *</span></legend>

@@ -214,6 +214,7 @@ label .opt {
 
 form input[type="text"],
 form input[type="email"],
+form input[type="tel"],
 form input[type="submit"],
 select, textarea {
   width: 100%;
