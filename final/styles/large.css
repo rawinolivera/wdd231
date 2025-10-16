@@ -68,9 +68,14 @@
     width: 100%;
     height: auto;
   }
+  
+  .home h1 {
+    padding-left: 1rem;
+  }
 
   .home-s1 {
     grid-column: 3 / 4;
+    grid-row: 1 / 2;
     display: flex;
     flex-direction: column;
     height: 100%;
