@@ -154,6 +154,11 @@ nav a:hover {
   text-align: right;
 }
 
+.quote {
+  text-indent: 2em;
+  font-style: italic;
+}
+
 .box h2 + .icon {
   display: inline-block; /* aligning img and h2 */
   vertical-align: middle;
