@@ -112,7 +112,15 @@ function homeItems() {
 
 
 const links = document.querySelectorAll("nav a");
-const currentPage = window.location.pathname.split("/").pop();
+const currentPage = window.location.pathname.split("/").pop() || 'index.html';
+
+if (currentPage === 'index.html') {
+  homeItems();
+}
+
+if(currentPage === 'joinus.html'){
+  setFormTime();
+}
 
 links.forEach(link => {
   const linkPage = link.getAttribute("href");
@@ -122,9 +130,7 @@ links.forEach(link => {
   }
 });
 
-if (currentPage === 'index.html') {
-  homeItems();
-}
+
 
 function setFormTime() {
   const submit = document.querySelector("#submit");
