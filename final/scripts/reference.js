@@ -25,6 +25,7 @@ ref = [
   }
 ]
 
+
 const refCont = document.querySelector(".home-s1");
 
 function createList (){

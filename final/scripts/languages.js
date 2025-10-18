@@ -26,6 +26,7 @@ function displayLanguages(lang, container) {
   btnOpen.textContent = "Learn More";
 
 
+
   card.appendChild(name);
   card.appendChild(org);
   card.appendChild(year);
@@ -55,6 +56,8 @@ function displayLanguages(lang, container) {
 //data
 const requestURL = "https://rawinolivera.github.io/wdd231/final/data/lenguages.json";
 const dir = document.querySelector("#lang");
+
+
 
 async function loadInterest() {
   try {
