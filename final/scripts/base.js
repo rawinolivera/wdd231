@@ -1,3 +1,6 @@
+import { getRandomQuote } from "./quotes.js";
+import { localMessage } from "./localMessage.js";
+
 var date = new Date();
 var year = date.getFullYear();
 document.querySelector('#current-year').textContent = year;
@@ -69,40 +72,7 @@ function homeItems() {
     }
   }); 
 
-
-  //Random Quotes Data
-  const quotes = [
-    {
-      "quote": "Programs are primarily meant to be read and understood by humans first, and only incidentally executed by computers for results.",
-      "author": "Donald Knuth"
-    },
-    {
-      "quote": "There are only two kinds of programming languages: those that people always complain about endlessly and those that nobody ever actually uses.",
-      "author": "Bjarne Stroustrup"
-    },
-    {
-      "quote": "The most dangerous phrase in the programming language is always, 'We have always done it this way,' which stops innovation and learning.",
-      "author": "Grace Hopper"
-    },
-    {
-      "quote": "Talk is cheap and anyone can say many things, but what truly matters in software development is to actually show me the working code.",
-      "author": "Linus Torvalds"
-    },
-    {
-      "quote": "Writing good code is not only about functionality but also about readability and maintainability, because good code is its own best documentation.",
-      "author": "Steve McConnell"
-    },
-    {
-      "quote": "First, fully understand and solve the problem at hand with clear thinking, and only afterwards proceed to write the actual code implementation efficiently.",
-      "author": "John Johnson"
-    }
-  ]
-
   // Random quote 
-  function getRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    return quotes[randomIndex];
-  }
   const randomQuote = getRandomQuote();
 
   document.querySelector(".quote").textContent = `${randomQuote.quote}`;
@@ -116,10 +86,14 @@ const currentPage = window.location.pathname.split("/").pop() || 'index.html';
 
 if (currentPage === 'index.html') {
   homeItems();
+  localMessage();
 }
 
 if(currentPage === 'joinus.html'){
   setFormTime();
+  const randomQuote = getRandomQuote();
+  document.querySelector(".quote").textContent = randomQuote.quote;
+  document.querySelector(".autor").textContent = `— ${randomQuote.author}`;
 }
 
 links.forEach(link => {

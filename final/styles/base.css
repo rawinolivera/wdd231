@@ -152,11 +152,13 @@ nav a:hover {
 .autor {
   font-weight: bold;
   text-align: right;
+  margin-top: 0;
 }
 
 .quote {
   text-indent: 2em;
   font-style: italic;
+  margin-bottom: .5rem;
 }
 
 .box h2 + .icon {

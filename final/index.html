@@ -17,8 +17,7 @@
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/base.css">
   <link rel="stylesheet" href="./styles/large.css">
-  <noscript><link rel="stylesheet" href="./styles/large.css"></noscript>
-  <script src="./scripts/base.js" defer></script>
+  <script type="module" src="./scripts/base.js"></script>
   <script src="./scripts/reference.js" defer></script>
 </head>
 <body>
@@ -60,6 +59,10 @@
       <p class="autor"></p>
     </div>
    </section>
+   <dialog id="openMsg">
+      <span id="msg"></span>
+      <button id="closeMsg">Close</button>
+    </dialog>
   </main>
   <footer>
     <div id="chamber-info">
