@@ -103,7 +103,7 @@ nav a:hover {
 .hero #c-link {
   font-size: 1.3rem;
   position: absolute;
-  top: 17.5%;
+  top: 18%;
   left: 5%;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
@@ -159,6 +159,7 @@ nav a:hover {
   text-indent: 2em;
   font-style: italic;
   margin-bottom: .5rem;
+  font-weight: 100;
 }
 
 .box h2 + .icon {
@@ -194,8 +195,8 @@ nav a:hover {
 }
 
 .box p span{
-  font-family: 'Edu QLD Beginner', sans-serif;
-  font-size: 1.2rem;
+  font-family: Georgia, sans-serif;
+  font-size: 1rem;
 }
 
 .random {
@@ -205,15 +206,16 @@ nav a:hover {
 }
 
 .random p {
-  font-family: 'Edu QLD Beginner', sans-serif;
-  font-size: 1.2rem;
+  font-family: Georgia, sans-serif;
+  font-size: 1rem;
+  line-height: 25px;
 }
 
 /*--- JOIN PAGE ---*/
 
 .joinus {
   display: grid;
-  padding: 1rem;
+  padding: .8rem;
 }
 
 .joinus img {
@@ -276,7 +278,7 @@ fieldset {
 }
 
 input, #product, option, textarea {
-  font-family: 'Edu QLD Beginner', sans-serif;
+  font-family: Georgia, sans-serif;
   font-size: 1.2rem;
 }
 
@@ -391,8 +393,9 @@ dialog::backdrop {
 
 .faq .answer {
   display: none;
-  font-family: 'Edu QLD Beginner', sans-serif;
-  font-size: 1.3rem;
+  font-family: Georgia, sans-serif;
+  font-size: 1rem;
+  line-height: 22px;
 }
 
 .pic img {
@@ -406,8 +409,8 @@ dialog::backdrop {
 
 .item p {
   margin: 0;
-  font-family: 'Edu QLD Beginner', sans-serif;
-  font-size: 1.2rem;
+  font-family: Georgia, sans-serif;
+  font-size: 1rem;
 }
 
 .item h3 {

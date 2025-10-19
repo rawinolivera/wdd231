@@ -91,7 +91,6 @@
 
   .home h2 {
     font-size: 1.8rem;
-    margin-top: 0rem;
   }
 
   .home-s1 li {
@@ -282,6 +281,14 @@
     object-position: center;
   }
 
+  .hero #c-link {
+    top: 20%;
+  }
+
+  .hero p {
+    font-size: 2rem;
+  }
+
 }
 
 @media screen and (min-width: 1020px) {
@@ -292,7 +299,7 @@
   .random p {
     padding-top: .5rem;
     line-height: 1.5;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   #lang {
@@ -301,7 +308,10 @@
 
   .hero #c-link {
     left: 25%;
-    top: 18%;
-    font-size: 2rem
+    top: 19%;
+  }
+
+  .joinus {
+    padding: 0 3rem;
   }
 }
