@@ -352,6 +352,10 @@ input[type=submit] {
   margin-left: 1rem;
 }
 
+#reso h2 {
+  margin-left: 1rem;
+}
+
 #lang {
   display: grid;
   gap: 1rem;
