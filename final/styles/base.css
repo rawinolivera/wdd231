@@ -112,6 +112,10 @@ nav a:hover {
   border-radius: 15px;
 }
 
+.hero #c-link.open {
+  top: 40%;
+}
+
 .hero #c-link:hover {
   background-color: #fff;
   color: #000;
@@ -124,6 +128,10 @@ nav a:hover {
 
 .home {
   display: grid;
+}
+
+.home h1 {
+  margin-left: 1rem;
 }
 
 .home h2 {
@@ -339,6 +347,10 @@ input[type=submit] {
 }
 
 /*---  RESOURCES  ---*/
+
+#reso h1 {
+  margin-left: 1rem;
+}
 
 #lang {
   display: grid;

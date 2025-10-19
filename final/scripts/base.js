@@ -9,6 +9,7 @@ document.querySelector('#last-mod').textContent = document.lastModified;
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector("ul");
 const span = document.querySelector("#top");
+const actBtn = document.querySelector("#c-link");
 
 hamButton.addEventListener("click", () => {
 	navigation.classList.toggle("open");
@@ -87,6 +88,17 @@ const currentPage = window.location.pathname.split("/").pop() || 'index.html';
 if (currentPage === 'index.html') {
   homeItems();
   localMessage();
+
+  
+  const actBtn = document.querySelector("#c-link");
+  hamButton.addEventListener("click", () => {
+    actBtn.classList.toggle("open");
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 500) {
+      actBtn.classList.remove("open");
+    }
+  });
 }
 
 if(currentPage === 'joinus.html'){
